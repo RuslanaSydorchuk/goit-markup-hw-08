@@ -1,0 +1,60 @@
+.contacts {
+    padding: 0;
+    margin-right: 70px;
+
+    font-style: normal;
+    width: 231px;
+}
+
+.contacts__address {
+    color: $minor-color;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+}
+
+.contacts__link {
+    padding: 0;
+
+    color: rgba(255, 255, 255, 0.6);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+}
+
+.contacts__item{
+    &:not(:last-child){
+        margin-bottom: 9px;
+    }
+    
+    display: block;
+}
+
+.company-social-links {
+    margin-right: 93px;
+}
+
+.contacts__link{
+    padding: 0;
+    margin-bottom: 9px;
+
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+    cursor: pointer;
+
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    
+    &:hover,
+    &:focus{
+        color: $accent-color;
+    }
+}

@@ -1,0 +1,82 @@
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    min-width: 528px;
+    min-height: 581px;
+
+    background: $primary-background-color;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+}
+
+.modal__button-close {
+    width: 30px;
+    height: 30px;
+    background: $primary-background-color;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    top: 8px;
+    right: 8px;
+    position: absolute;
+
+    @include flexCenter;
+
+    transition-property: cursor, fill, filter;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover {
+        cursor: pointer;
+        fill: $accent-color;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+        }
+}
+
+.button-close__icon {
+    color: #000000;
+}
+
+.modal__header {
+    margin-bottom: 0;
+    margin-top: 40px;
+    padding: 0;
+
+    display: block;
+    text-align: center;
+
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: 0.03em;
+    color: $title-text-color;
+}
+
+.modal__button-submit {
+    width: 200px;
+    height: 50px;
+
+    background: $accent-color;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    color: $minor-color;
+    border: 0;
+    cursor: pointer;
+
+    transition-property: filter, background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+        background-color: #188CE8;
+        }
+}

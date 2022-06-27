@@ -1,0 +1,34 @@
+.company-social-links__list {
+    display: flex;
+}
+
+.company-social-link {
+    width: 44px;
+    height: 44px;
+
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+
+    @include flexCenter;
+
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus{
+        background-color: $accent-color;
+    }
+}
+
+.company-social-link-item {
+    &:not(:last-child){
+        margin-right: 10px;
+    }
+    
+}
+
+.icon-company-social-link {
+    fill: $minor-color;
+    display: block;
+}

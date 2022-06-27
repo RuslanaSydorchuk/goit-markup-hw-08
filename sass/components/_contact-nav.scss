@@ -1,0 +1,85 @@
+.contact-nav {
+    
+    @media screen and (min-width: $mobile) {
+        display: none;
+    };
+
+    @media screen and (min-width: $tablet) {
+        display: block;
+    };
+
+    @media screen and (min-width: $desktop) {
+        display: $type;
+        margin-left: auto;
+    };
+}
+.contact-nav__item{
+    &:not(:last-child){
+        @media screen and (min-width: $tablet){
+            margin-bottom: 10px;
+        }
+
+        @media screen and (min-width: $desktop){
+            margin-right: 50px;
+        }
+    }
+}
+.contact-nav__link {
+    height: 16px;
+    color: $primary-text-color;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+
+    @media screen and (min-width: $tablet){
+        font-size: 12px;
+        line-height: 1.16;
+    }
+
+    @media screen and (min-width: $desktop){
+    font-size: 14px;
+    line-height: 1.14;
+    }
+
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    display: $type;
+    align-items: $cross-axis;
+
+    &:hover,
+    &:focus{
+        color: $accent-color;
+    }
+}
+
+.contact-nav__icon {
+
+    @media screen and (min-width: $tablet){
+        margin: 0 8px 0 0;
+    };
+
+    @media screen and (min-width: $desktop){
+        margin: 0 10px 0 0;
+    };
+
+    padding: 0;
+
+    fill: currentColor;
+    display: block;
+}
+
+.contact-nav__icon-smartphone{
+    @media screen and (min-width: $tablet){
+        height: 14px;
+        wigth: 10px;
+    }
+}
+
+.contact-nav__icon-envelope{
+    @media screen and (min-width: $tablet) {
+            height: 10px;
+            wigth: 14px;
+        }
+}

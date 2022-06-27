@@ -1,0 +1,54 @@
+.section{
+    
+    @media screen and (min-width: $mobile){
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    @media screen and (min-width: $tablet){
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    
+
+    @media screen and (min-width: $desktop){
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
+}
+
+.section__no-padding-top {
+    padding-top: 0;
+}
+
+.section__heading {
+    margin-top: 0;
+    margin-bottom: 50px;
+
+    color: $title-text-color;
+    letter-spacing: 0.03em;
+    text-align: center;
+
+    @media screen and (min-width: $mobile){
+        font-size: 28px;
+        line-height: 1.18;
+    }
+    @media screen and (min-width: $tablet){
+        font-size: 28px;
+            line-height: 1.18;
+    }
+    @media screen and (min-width: $desktop){
+    font-size: 36px;
+    line-height: 1.2;
+    }
+}
+
+.section-servises{
+    @media screen and (min-width: $mobile) {
+        display: none;
+    }
+    
+    @media screen and (min-width: $tablet) {
+        display: none;
+    }
+}

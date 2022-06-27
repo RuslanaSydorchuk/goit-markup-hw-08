@@ -1,0 +1,24 @@
+@mixin logo{
+    font-weight: 700;
+    font-family: $minor-font;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+    display: block;
+}
+
+@mixin flexCenter{
+    display: $type;
+    justify-content: $main-axis;
+    align-items: $cross-axis;
+}
+
+@mixin sectionHeaderCentre{
+    margin-top: 0;
+    margin-bottom: 50px;
+    
+    color: $title-text-color;
+    font-size: 36px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    text-align: center;
+}

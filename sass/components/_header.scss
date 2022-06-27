@@ -1,0 +1,12 @@
+.header {
+    box-sizing: border-box;
+    border-bottom: 1px solid #ECECEC;
+    align-items: baseline;
+
+    &__container{
+        display: flex;
+        align-items: center;
+    }
+    
+}
+
