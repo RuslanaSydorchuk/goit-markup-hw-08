@@ -3,9 +3,16 @@
 }
 
 .members__list {
+    @media screen and (min-width: $tablet){
+        display: $type;
+        flex-wrap: wrap;
+        margin: -15px;
+    }
     @media screen and (min-width: $desktop){
         display: $type;
+        margin: -15px;
     }
+
 }
 
 .members__item {
@@ -16,32 +23,50 @@
     border-radius: 0px 0px 4px 4px;
 
     &:not(:last-child) {
-        @media screen and (min-width: $mobile) {
+        @media screen and (max-width: 767px) {
             margin-bottom: 30px;
         }
-        @media screen and (min-width: $desktop){
+
+        
+    };
+
+        @media screen and (min-width: $tablet) {
+            margin: 15px;
+            }
+
+        @media screen and (min-width: $desktop) {
+            margin: 15px;
+        }
+
+    /*&:nth-child(2n+1) {
+        @media screen and (min-width: $tablet) {
             margin-right: 30px;
         }
-    };
+        };
+    &:nth-child(-n+2){
+        @media screen and (min-width: $tablet) {
+            margin-bottom: 30px;
+        }*/
 
     @media screen and (min-width: $mobile){
         width: 450px;
+        
     };
 
     @media screen and (min-width: $tablet){
-        width: 50%;
+        width: calc((768px - 60px) / 2);
     };
+
     @media screen and (min-width: $desktop){
         width: calc((1170px - 90px) /4);
-
     };
-}
+}    
 
 .members__photo{
     display: block;
     max-width: 100%;
 
-    @media screen and (min-width: $mobile) {
+    @media screen and (min-width: $mobile){
         width: 450px;
         height: 460px;
     }
@@ -54,12 +79,22 @@
     @media screen and (min-width: $desktop){
         width: 270px;
         height: 260px;
-}
+    }
 }
 
 .members__information {
-    padding-top: 30px;
-    padding-bottom: 30px;
+    @media screen and (min-width: $mobile){
+        padding-top: 30px;
+        padding-bottom: 24px;
+    };
+    @media screen and (min-width: $tablet){
+        padding-top: 30px;
+        padding-bottom: 24px;
+    };
+    @media screen and (min-width: $desktop){
+        padding-top: 30px;
+        padding-bottom: 30px;
+    };
 }
 
 .members__name {

@@ -1,9 +1,17 @@
 .contacts {
     padding: 0;
-    margin-right: 70px;
 
     font-style: normal;
-    width: 231px;
+    
+    @media screen and (min-width: $mobile){
+        margin-bottom: 60px; 
+        text-align: center;
+    }
+
+    @media screen and (min-width: $desktop){
+        margin-right: 70px;
+        width: 231px;
+}
 }
 
 .contacts__address {
@@ -28,19 +36,27 @@
 
 .contacts__item{
     &:not(:last-child){
-        margin-bottom: 9px;
+        @media screen and (max-width: 767px){
+            margin-bottom: 8px;
+        }
+        @media screen and (min-width: $desktop){
+            margin-bottom: 9px;
+        }
     }
     
     display: block;
 }
 
 .company-social-links {
-    margin-right: 93px;
+    @media screen and (min-width: $desktop){
+        margin-right: 93px;
+    }
+    
 }
 
 .contacts__link{
     padding: 0;
-    margin-bottom: 9px;
+
 
     color: rgba(255, 255, 255, 0.6);
     font-size: 14px;

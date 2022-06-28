@@ -23,7 +23,7 @@
 
 .section__heading {
     margin-top: 0;
-    margin-bottom: 50px;
+    
 
     color: $title-text-color;
     letter-spacing: 0.03em;
@@ -32,14 +32,17 @@
     @media screen and (min-width: $mobile){
         font-size: 28px;
         line-height: 1.18;
+        margin-bottom: 30px;
     }
     @media screen and (min-width: $tablet){
         font-size: 28px;
-            line-height: 1.18;
+        line-height: 1.18;
+        margin-bottom: 30px;
     }
     @media screen and (min-width: $desktop){
-    font-size: 36px;
-    line-height: 1.2;
+        font-size: 36px;
+        line-height: 1.2;
+        margin-bottom: 50px;
     }
 }
 

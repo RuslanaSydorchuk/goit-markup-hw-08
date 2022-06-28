@@ -5,14 +5,18 @@
 
     background-color: $secondary-background-color;
 
-    /*display: $type;*/
+    @media screen and (min-width: $mobile){
+        display: $type;
+    }
 }
 
 .footer-page__container {
     padding: 0;
-
-    /*display: flex;*/
-    align-items: baseline;
+    
+    @media screen and (min-width: $desktop){
+        display: $type;
+        align-items: baseline;
+    }
 }
 
 .footer-section__heading {
@@ -27,4 +31,8 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: $minor-color;
+
+    @media screen and (min-width: $mobile){
+        text-align: center;
+    }
 }
