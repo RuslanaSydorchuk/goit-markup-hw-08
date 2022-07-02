@@ -1,17 +1,20 @@
 .feature {
     
-    @media screen and (max-width: 1169px) {
+    @media screen and (max-width: $max-mobile){
+        display: flex;
+        justify-content: center;
+    }
+
+    @media screen and (max-width: $max-tablet) {
         display: $type;
         flex-wrap: wrap;
         margin: -15px;
     }
 
-    @media screen and (min-width: $desktop) {
+    @media screen and (min-width: $min-desktop) {
         display: $type;
     }
 }
-
-
 
 .feature__thumb {
     margin-top: 0;
@@ -29,34 +32,28 @@
 }
 
 .feature__item{
-    &:not(:last-child){
-    @media screen and (min-width: $mobile){
-        margin-bottom: 30px;
-    }
-    }
-    @media screen and (min-width: $mobile){
+    
+    @media screen and (min-width: $min-mobile){
         width: 450px;
     }
 
-    @media screen and (max-width: 1169px) {
+    @media screen and (min-width: $min-tablet) {
         width: 354px;
         margin: 15px;
     }
     
-    /*&:nth-child(2n-1){
-    @media screen and (min-width: $tablet){
-        margin-right: 30px;
-    }
-    }*/
 
-    @media screen and (min-width: $desktop){
+    @media screen and (min-width: $min-desktop){
         width: calc((1170px - 90px) / 4);
         
     }
 
     &:not(:last-child) {
-    @media screen and (min-width: $desktop) {
+    @media screen and (min-width: $min-desktop) {
         margin-right: 30px;
+    }
+    @media screen and (max-width: $max-mobile) {
+        margin-bottom: 30px;
     }
 }
 }
@@ -71,15 +68,15 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
 
-    @media screen and (min-width: $mobile){
+    @media screen and (min-width: $min-mobile){
         text-align: center;
     }
 
-    @media screen and (min-width: $tablet) {
+    @media screen and (min-width: $min-tablet) {
         text-align: left;
     }
 
-    @media screen and (min-width: $desktop){
+    @media screen and (min-width: $min-desktop){
         text-align: left;
     }
 }

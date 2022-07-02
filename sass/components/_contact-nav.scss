@@ -1,25 +1,26 @@
 .contact-nav {
-    
-    @media screen and (min-width: $mobile) {
-        display: none;
-    };
+    @media screen and (max-width: $max-mobile) {
+        margin-left: 40px;
+        display: flex;
+        flex-direction: column-reverse;
+    }
 
-    @media screen and (min-width: $tablet) {
+    @media screen and (min-width: $min-tablet) {
         display: block;
     };
 
-    @media screen and (min-width: $desktop) {
+    @media screen and (min-width: $min-desktop) {
         display: $type;
         margin-left: auto;
     };
 }
 .contact-nav__item{
     &:not(:last-child){
-        @media screen and (min-width: $tablet){
+        @media screen and (max-width: $max-tablet){
             margin-bottom: 10px;
         }
 
-        @media screen and (min-width: $desktop){
+        @media screen and (min-width: $min-desktop){
             margin-right: 50px;
         }
     }
@@ -31,12 +32,12 @@
     letter-spacing: 0.02em;
     text-decoration: none;
 
-    @media screen and (min-width: $tablet){
+    @media screen and (min-width: $min-tablet){
         font-size: 12px;
         line-height: 1.16;
     }
 
-    @media screen and (min-width: $desktop){
+    @media screen and (min-width: $min-desktop){
     font-size: 14px;
     line-height: 1.14;
     }
@@ -56,11 +57,11 @@
 
 .contact-nav__icon {
 
-    @media screen and (min-width: $tablet){
+    @media screen and (max-width: $max-tablet){
         margin: 0 8px 0 0;
     };
 
-    @media screen and (min-width: $desktop){
+    @media screen and (min-width: $min-desktop){
         margin: 0 10px 0 0;
     };
 
@@ -71,14 +72,14 @@
 }
 
 .contact-nav__icon-smartphone{
-    @media screen and (min-width: $tablet){
+    @media screen and (min-width: $min-tablet){
         height: 14px;
         wigth: 10px;
     }
 }
 
 .contact-nav__icon-envelope{
-    @media screen and (min-width: $tablet) {
+    @media screen and (min-width: $min-tablet) {
             height: 10px;
             wigth: 14px;
         }

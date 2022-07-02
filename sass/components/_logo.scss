@@ -1,22 +1,22 @@
 .header-logo  {
-    @media screen and (min-width: $mobile) {
-        padding-top: 16px;
-        padding-bottom: 16px;
+    @media screen and (max-width: $max-mobile) {
+        margin-top: 16px;
+        margin-bottom: 16px;
         font-size: 24px;
         line-height: 1.16;
     };
 
-    @media screen and  (min-width: $tablet) {
-        padding-top: 26px;
-        padding-bottom: 26px;
+    @media screen and (min-width: $min-tablet) and  (max-width: $max-tablet) {
+        margin-top: 26px;
+        margin-bottom: 26px;
         font-size: 24px;
         line-height: 1.16;
     };
 
-    @media screen and (min-width: $desktop){
-        padding-top: 24px;
-        padding-bottom: 25px;
+    @media screen and (min-width: $min-desktop){
+        margin-top: 24px;
         margin-right: 92px;
+        margin-bottom: 25px;
         font-size: 28px;
         line-height: 1.11;
     };
@@ -38,27 +38,28 @@
     display: block;
     color: $minor-color;
 
-    @media screen and (min-width: $mobile) {
-            padding-top: 16px;
-            padding-bottom: 16px;
+    @media screen and (max-width: $max-mobile) {
+            margin-top: 16px;
+            margin-bottom: 16px;
             font-size: 24px;
             line-height: 1.16;
             text-align: center;
         }
+    
         ;
     
-        @media screen and (min-width: $tablet) {
-            padding-top: 26px;
-            padding-bottom: 26px;
+        @media screen and (min-width: $min-tablet) and (max-width: $max-tablet){
             font-size: 24px;
             line-height: 1.16;
+            margin-top: 60px;
+            margin-bottom: 20px;
+            margin-left: 61px;
         }
     
         ;
     
-        @media screen and (min-width: $desktop) {
-            padding-top: 24px;
-            padding-bottom: 25px;
+        @media screen and (min-width: $min-desktop) {
+            margin-top: 24px;
             margin-right: 92px;
             font-size: 28px;
             line-height: 1.11;

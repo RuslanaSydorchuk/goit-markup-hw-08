@@ -3,12 +3,18 @@
 
     font-style: normal;
     
-    @media screen and (min-width: $mobile){
+    @media screen and (max-width: $max-mobile){
         margin-bottom: 60px; 
         text-align: center;
     }
 
-    @media screen and (min-width: $desktop){
+    @media screen and (min-width: $min-tablet) and (max-width: $max-tablet){
+        margin-top: 20px;
+        margin-right: 165px;
+        margin-left: 61px;
+    }
+
+    @media screen and (min-width: $min-desktop){
         margin-right: 70px;
         width: 231px;
 }
@@ -36,10 +42,10 @@
 
 .contacts__item{
     &:not(:last-child){
-        @media screen and (max-width: 767px){
+        @media screen and (max-width: $max-mobile){
             margin-bottom: 8px;
         }
-        @media screen and (min-width: $desktop){
+        @media screen and (min-width: $min-desktop){
             margin-bottom: 9px;
         }
     }
@@ -48,7 +54,7 @@
 }
 
 .company-social-links {
-    @media screen and (min-width: $desktop){
+    @media screen and (min-width: $min-desktop){
         margin-right: 93px;
     }
     

@@ -6,16 +6,17 @@
     
     /*width: 1200px;*/
 
-    @media screen and (min-width: $mobile){
+    @media screen and (min-width: $min-mobile){
         width: 480px;
+        background-color: bisque;
     }
 
-    @media screen and (min-width: $tablet){
+    @media screen and (min-width: $min-tablet){
         width: 768px;
         background-color: aqua;
     }
 
-    @media screen and (min-width: $desktop){
+    @media screen and (min-width: $min-desktop){
         width: 1200px;
         background-color: orange;
     }

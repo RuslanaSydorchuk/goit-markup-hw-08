@@ -1,17 +1,17 @@
 .section{
     
-    @media screen and (min-width: $mobile){
+    @media screen and (min-width: $min-mobile){
         padding-top: 60px;
         padding-bottom: 60px;
     }
 
-    @media screen and (min-width: $tablet){
+    @media screen and (min-width: $min-tablet){
         padding-top: 60px;
         padding-bottom: 60px;
     }
     
 
-    @media screen and (min-width: $desktop){
+    @media screen and (min-width: $min-desktop){
         padding-top: 94px;
         padding-bottom: 94px;
     }
@@ -29,29 +29,29 @@
     letter-spacing: 0.03em;
     text-align: center;
 
-    @media screen and (min-width: $mobile){
+    @media screen and (min-width: $min-mobile){
         font-size: 28px;
         line-height: 1.18;
         margin-bottom: 30px;
     }
-    @media screen and (min-width: $tablet){
+    @media screen and (min-width: $min-tablet){
         font-size: 28px;
         line-height: 1.18;
         margin-bottom: 30px;
     }
-    @media screen and (min-width: $desktop){
+    @media screen and (min-width: $min-desktop){
         font-size: 36px;
         line-height: 1.2;
         margin-bottom: 50px;
     }
 }
 
-.section-servises{
-    @media screen and (min-width: $mobile) {
+.section-servises {
+    @media screen and (min-width: $min-mobile) {
         display: none;
     }
-    
-    @media screen and (min-width: $tablet) {
+
+    @media screen and (min-width: $min-tablet) {
         display: none;
     }
 }

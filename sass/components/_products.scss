@@ -1,11 +1,32 @@
 .products__list {
     display: flex;
     flex-wrap: wrap;
-    gap: 30px;
+
+    @media screen and (max-width: $max-tablet){
+        margin: -15px;
+    }
+    
+    @media screen and (min-width: $min-desktop){
+        margin: -15px;
+    }
+    
 }
 
 .products__item {
-    width: calc( (1170px - 60px) /3 );
+    @media screen and (max-width: $max-mobile){
+        width: 450px;
+        margin-bottom: 30px;
+    }
+
+    @media screen and (max-width: $max-tablet){
+        width: calc((768px - 60px) / 2);
+        margin: 15px;
+    }
+
+    @media screen and (min-width: $min-desktop){
+        width: calc((1200px - 90px) /3);
+        margin: 15px;
+    }
 }
 
 .products__link {

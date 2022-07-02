@@ -3,12 +3,16 @@
 }
 
 .members__list {
-    @media screen and (min-width: $tablet){
+    @media screen and (min-width: $min-mobile){
+        margin: -15px;
+    }
+
+    @media screen and (max-width: $max-tablet){
         display: $type;
         flex-wrap: wrap;
         margin: -15px;
     }
-    @media screen and (min-width: $desktop){
+    @media screen and (min-width: $min-desktop){
         display: $type;
         margin: -15px;
     }
@@ -23,42 +27,26 @@
     border-radius: 0px 0px 4px 4px;
 
     &:not(:last-child) {
-        @media screen and (max-width: 767px) {
+        @media screen and (max-width: $max-mobile) {
             margin-bottom: 30px;
         }
 
         
     };
 
-        @media screen and (min-width: $tablet) {
-            margin: 15px;
-            }
-
-        @media screen and (min-width: $desktop) {
-            margin: 15px;
-        }
-
-    /*&:nth-child(2n+1) {
-        @media screen and (min-width: $tablet) {
-            margin-right: 30px;
-        }
-        };
-    &:nth-child(-n+2){
-        @media screen and (min-width: $tablet) {
-            margin-bottom: 30px;
-        }*/
-
-    @media screen and (min-width: $mobile){
+    @media screen and (min-width: $min-mobile){
         width: 450px;
-        
+        margin: 15px;
     };
 
-    @media screen and (min-width: $tablet){
+    @media screen and (min-width: $min-tablet){
         width: calc((768px - 60px) / 2);
+        margin: 15px;
     };
 
-    @media screen and (min-width: $desktop){
-        width: calc((1170px - 90px) /4);
+    @media screen and (min-width: $min-desktop){
+        width: calc((1200px - 120px) /4);
+        margin: 15px;
     };
 }    
 
@@ -66,32 +54,32 @@
     display: block;
     max-width: 100%;
 
-    @media screen and (min-width: $mobile){
+    @media screen and (min-width: $min-mobile){
         width: 450px;
         height: 460px;
     }
 
-    @media screen and (min-width: $tablet){
+    @media screen and (min-width: $min-tablet){
         width: 354px;
         height: 374px;
     }
 
-    @media screen and (min-width: $desktop){
+    @media screen and (min-width: $min-desktop){
         width: 270px;
         height: 260px;
     }
 }
 
 .members__information {
-    @media screen and (min-width: $mobile){
+    @media screen and (min-width: $min-mobile){
         padding-top: 30px;
         padding-bottom: 24px;
     };
-    @media screen and (min-width: $tablet){
+    @media screen and (min-width: $min-tablet){
         padding-top: 30px;
         padding-bottom: 24px;
     };
-    @media screen and (min-width: $desktop){
+    @media screen and (min-width: $min-desktop){
         padding-top: 30px;
         padding-bottom: 30px;
     };
