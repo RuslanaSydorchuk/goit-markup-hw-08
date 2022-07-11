@@ -1,4 +1,5 @@
 .contact-nav {
+
     @media screen and (max-width: $max-mobile) {
         margin-left: 40px;
         display: flex;
@@ -56,7 +57,15 @@
 }
 
 .contact-nav__link-tel{
-    @media screen and (max-width: $max-mobile){
+    @media screen and (max-width: $min-mobile) {
+            font-size: 30px;
+            line-height: 1.18;
+            letter-spacing: 0.02em;
+            color: $accent-color;
+            margin-bottom: 32px;
+        }
+
+    @media screen and (min-width: $min-mobile) and (max-width: $max-mobile){
         font-weight: 500;
         font-size: 34px;
         line-height: 1.18;

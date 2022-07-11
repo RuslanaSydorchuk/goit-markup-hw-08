@@ -63,6 +63,9 @@
     top: 50%;
 
     transform: translateY(-50%);
+    @media screen and (max-width: $min-mobile){
+        left: 0;
+    }
     @media screen and (min-width: $min-mobile) and (max-width: $max-mobile){
         left: 0;
     }
@@ -155,7 +158,7 @@
     letter-spacing: 0.03em;
     color:$primary-text-color;
 
-    @media screen and (min-width: $min-mobile) and (max-width: $max-tablet){
+    @media screen and (max-width: $max-tablet){
         font-size: 12px;
         line-height: 1.16;
     }

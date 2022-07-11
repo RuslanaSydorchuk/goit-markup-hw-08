@@ -3,6 +3,7 @@
 
     font-style: normal;
     
+
     @media screen and (max-width: $max-mobile){
         margin-bottom: 60px; 
         text-align: center;
@@ -41,6 +42,7 @@
 }
 
 .contacts__item{
+    
     &:not(:last-child){
         @media screen and (max-width: $max-mobile){
             margin-bottom: 8px;

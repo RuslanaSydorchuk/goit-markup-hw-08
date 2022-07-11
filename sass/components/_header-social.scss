@@ -1,6 +1,10 @@
 .header-social{
-    @media screen and (max-width: $max-mobile){
-        display: flex;
+    @media screen and (max-width: $min-mobile){
+        display: $type;
+        flex-wrap: wrap;
+    }
+    @media screen and (min-width: $min-mobile) and (max-width: $max-mobile){
+        display: $type;
         margin-left: 40px;
     }
 
