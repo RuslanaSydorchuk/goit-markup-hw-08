@@ -55,7 +55,32 @@
     }
 }
 
+.contact-nav__link-tel{
+    @media screen and (max-width: $max-mobile){
+        font-weight: 500;
+        font-size: 34px;
+        line-height: 1.18;
+        letter-spacing: 0.02em;
+        color: $accent-color;
+        margin-bottom: 32px;
+    }
+}
+
+.contact-nav__link-mail{
+    @media screen and (max-width: $max-mobile){
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 1.17;
+        letter-spacing: 0.02em;
+        margin-bottom: 64px;
+    }
+}
+
 .contact-nav__icon {
+
+    @media screen and (max-width: $max-mobile){
+        display: none;
+    }
 
     @media screen and (max-width: $max-tablet){
         margin: 0 8px 0 0;
@@ -76,11 +101,19 @@
         height: 14px;
         wigth: 10px;
     }
+    @media screen and (min-width: $min-desktop){
+        height: 16px;
+        width: 10px;
+    }
 }
 
 .contact-nav__icon-envelope{
     @media screen and (min-width: $min-tablet) {
             height: 10px;
             wigth: 14px;
+        }
+    @media screen and (min-width: $min-desktop) {
+            height: 12px;
+            width: 16px;
         }
 }

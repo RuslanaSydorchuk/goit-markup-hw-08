@@ -1,11 +1,29 @@
 .modal {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    @media screen and (min-width: $min-mobile) and (max-width: $max-mobile){
+        width: 450px;
+        height: 609px;
+        position: relative;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    
 
-    min-width: 528px;
-    min-height: 581px;
+    @media screen and (min-width: $min-tablet){
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        
+        min-width: 528px;
+        min-height: 581px;
+    }
+    
+
+    @media screen and (max-width: $max-mobile){
+        
+        max-width: 450px;
+        height: 609px;
+    }
 
     background: $primary-background-color;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -49,9 +67,14 @@
 
     font-weight: 700;
     font-size: 20px;
-    line-height: 23px;
+    line-height: 1.15;
     letter-spacing: 0.03em;
     color: $title-text-color;
+
+    @media screen and (min-width: $min-mobile) and (max-width: $max-mobile) {
+        min-width: 360px;
+        margin-top: 40px;
+    }
 }
 
 .modal__button-submit {
@@ -69,6 +92,10 @@
     color: $minor-color;
     border: 0;
     cursor: pointer;
+
+    /*@media screen and (min-width: $min-mobile) and (max-width: $max-mobile){
+        margin-bottom: 30px;
+    }*/
 
     transition-property: filter, background-color;
     transition-duration: 250ms;

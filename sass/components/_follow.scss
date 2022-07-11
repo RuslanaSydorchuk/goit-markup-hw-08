@@ -1,4 +1,7 @@
 .follow {
+    @media screen and (min-width: $min-tablet) and (max-width: $max-tablet) {
+            max-width: 768px;
+        }
 
     @media screen and (min-width: $min-desktop) {
             display: $type;
@@ -21,7 +24,8 @@
     padding: 10px;
 
     @media screen and (max-width: $max-mobile){
-        width: 450px;
+        max-width: 450px;
+        width: 100%;
     }
 
     @media screen and (min-width: $min-tablet) and (max-width: $max-tablet){
@@ -76,8 +80,10 @@
 
 .follow__button {
     margin-left: 12px;
+    padding-left: 29px;
+    padding-right: 28px;
 
-    width: 200px;
+    max-width: 200px;
     height: 50px;
 
     @include flexCenter;

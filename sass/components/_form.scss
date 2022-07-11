@@ -1,5 +1,5 @@
 .form {
-    margin: 12px 40px 30px 40px;
+    margin: 12px 40px 30px 40px;    
 }
 
 .form__field {
@@ -60,9 +60,16 @@
     width: 18px;
     height: 18px;
     position: absolute;
-    left: 12px;
     top: 50%;
+
     transform: translateY(-50%);
+    @media screen and (min-width: $min-mobile) and (max-width: $max-mobile){
+        left: 0;
+    }
+        
+    @media screen and (min-width: $min-desktop){
+        left: 12px;
+    }
 
     fill: #212121;
 
@@ -81,8 +88,8 @@
 
     &::placeholder {
         font-weight: 400;
-        font-size: 12px;
-        line-height: 1.16;
+        font-size: 14px;
+        line-height: 1.15;
         letter-spacing: 0.01em;
         color: rgba(117, 117, 117, 0.5);
     
@@ -145,10 +152,18 @@
     display: block;
     
     font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
     letter-spacing: 0.03em;
     color:$primary-text-color;
+
+    @media screen and (min-width: $min-mobile) and (max-width: $max-tablet){
+        font-size: 12px;
+        line-height: 1.16;
+    }
+
+    @media screen and (min-width: $min-desktop) {
+        font-size: 14px;
+            line-height: 1.71;
+    }
 }
 
 .form__policy {

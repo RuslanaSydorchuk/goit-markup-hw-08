@@ -2,5 +2,9 @@ body{
     font-family: $main-font;
     background-color: $primary-background-color;
     color: $primary-text-color;
+    
 }
     
+body.modal-open{
+    overflow: hidden;
+}

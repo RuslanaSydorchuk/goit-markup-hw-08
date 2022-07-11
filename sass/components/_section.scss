@@ -1,11 +1,6 @@
 .section{
-    
-    @media screen and (min-width: $min-mobile){
-        padding-top: 60px;
-        padding-bottom: 60px;
-    }
 
-    @media screen and (min-width: $min-tablet){
+    @media screen and (max-width: $max-tablet){
         padding-top: 60px;
         padding-bottom: 60px;
     }
@@ -47,11 +42,12 @@
 }
 
 .section-servises {
-    @media screen and (min-width: $min-mobile) {
+    @media screen and (max-width: $max-tablet) {
         display: none;
     }
 
-    @media screen and (min-width: $min-tablet) {
-        display: none;
+
+    @media screen and (min-width: $min-desktop){
+        display: $type;
     }
 }

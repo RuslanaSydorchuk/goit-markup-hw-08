@@ -28,7 +28,7 @@
 }
 
 .site-nav__link {
-    @media screen and (min-width: $min-mobile) and (max-width: $max-mobile) {
+    @media screen and (max-width: $max-mobile) {
             display: block;
             padding: 0;
             margin-bottom: 32px;
@@ -46,7 +46,7 @@
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-    @media screen and (min-width: $min-mobile) and (max-width: $max-mobile) {
+    @media screen and (max-width: $max-mobile) {
         font-weight: 500;
         font-size: 40px;
         line-height: 47px;
@@ -68,7 +68,10 @@
         }
 
     &--current {
-        color: $accent-color;
+        @media screen and (min-width: $min-tablet){
+            color: $accent-color;
+        }
+        
         }
 
     &--current::after {

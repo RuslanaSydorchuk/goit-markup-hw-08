@@ -26,48 +26,27 @@
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
 
-    &:not(:last-child) {
-        @media screen and (max-width: $max-mobile) {
-            margin-bottom: 30px;
+    @media screen and (max-width: $max-mobile) {
+        width: calc(480px - 30px);
+        margin: 15px;
         }
 
-        
-    };
-
-    @media screen and (min-width: $min-mobile){
-        width: 450px;
-        margin: 15px;
-    };
-
-    @media screen and (min-width: $min-tablet){
+    @media screen and (max-width: $max-tablet) {
         width: calc((768px - 60px) / 2);
         margin: 15px;
     };
 
-    @media screen and (min-width: $min-desktop){
+    @media screen and (min-width: $min-desktop) {
         width: calc((1200px - 120px) /4);
+        height: auto;
         margin: 15px;
-    };
-}    
+    }
+}
 
 .members__photo{
     display: block;
     max-width: 100%;
-
-    @media screen and (min-width: $min-mobile){
-        width: 450px;
-        height: 460px;
-    }
-
-    @media screen and (min-width: $min-tablet){
-        width: 354px;
-        height: 374px;
-    }
-
-    @media screen and (min-width: $min-desktop){
-        width: 270px;
-        height: 260px;
-    }
+    height: auto;
 }
 
 .members__information {

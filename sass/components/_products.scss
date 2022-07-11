@@ -46,6 +46,20 @@
 .products__thumb {
     position: relative;
     overflow: hidden;
+
+    @media screen and (min-width: $min-mobile) and (max-width: $max-mobile){
+        width: 450px;
+        height: 294px;
+    }
+    @media screen and (min-width: $min-tablet) and (max-width: $max-tablet){
+        width: 354px;
+        height: 294px;
+    }
+
+    @media screen and (min-width: $min-desktop){
+        width: 370px;
+        height: 294px;
+    }
 }
 
 .products__link {
@@ -59,6 +73,7 @@
 .products__image{
     display: block;
     max-width: 100%;
+    height: auto;
 }
 
 .products__description {

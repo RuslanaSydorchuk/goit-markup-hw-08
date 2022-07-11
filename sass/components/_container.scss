@@ -3,17 +3,15 @@
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
-    
-    /*width: 1200px;*/
 
     @media screen and (min-width: $min-mobile){
         width: 480px;
-        background-color: bisque;
+        background-color: violet;
     }
 
     @media screen and (min-width: $min-tablet){
         width: 768px;
-        background-color: aqua;
+        background-color: blue;
     }
 
     @media screen and (min-width: $min-desktop){

@@ -19,29 +19,54 @@
     <header class="header">
         <div class="header__container container">
             <a class="header-logo " href=""> <span class="logo-accent">Web</span>Studio</a>
-            <ul class="site-nav list">
-                <li class="site-nav__item"><a href="index.html" class="site-nav__link ">Студия</a></li>
-                <li class="site-nav__item"><a href="portfolio.html" class="site-nav__link site-nav__link--current">Портфолио</a></li>
-                <li class="site-nav__item"><a href="" class="site-nav__link">Контакты</a></li>
-            </ul>
+            <button type="button" class="button-menu " aria-expanded data-menu-button aria-controls="main-nav">
+                <svg width="40" height="40" aria-label="Переключатель мобилього меню">
+                    <use class="menu__icon-menu" href="./images/icons.svg#icon-menu"></use>
+                    <use class="menu__icon-close" href="./images/icons.svg#icon-close-menu"></use>
+                </svg>
+            </button>
+            <div class="main-nav" id="main-nav" data-menu>
+                <ul class="site-nav list">
+                    <li class="site-nav__item"><a href="index.html"
+                            class="site-nav__link ">Студия</a></li>
+                    <li class="site-nav__item"><a href="portfolio.html" class="site-nav__link site-nav__link--current">Портфолио</a></li>
+                    <li class="site-nav__item"><a href="" class="site-nav__link">Контакты</a></li>
+                </ul>
     
-            <ul class="contact-nav list">
-                <li class="contact-nav__item">
-                    <a href="mailto:info@devstudio.com" class="contact-nav__link">
-                        <svg class="contact-nav__icon" width="16" height="12">
-                            <use href="./images/icons.svg#icon-envelope"></use>
-                        </svg>
-                        info@devstudio.com</a>
-                </li>
+                <ul class="contact-nav list">
+                    <li class="contact-nav__item">
+                        <a href="mailto:info@devstudio.com" class="contact-nav__link contact-nav__link-mail">
+                            <svg class="contact-nav__icon contact-nav__icon-envelope" width="16" height="12">
+                                <use href="./images/icons.svg#icon-envelope"></use>
+                            </svg>
+                            info@devstudio.com</a>
+                    </li>
     
-                <li class="contact-nav__item">
-                    <a href="tel:+380961111111" class="contact-nav__link">
-                        <svg class="contact-nav__icon" width="10" height="16">
-                            <use href="./images/icons.svg#icon-smartphone"></use>
-                        </svg>
-                        +38 096 111 11 11</a>
-                </li>
-            </ul>
+                    <li class="contact-nav__item">
+                        <a href="tel:+380961111111" class="contact-nav__link contact-nav__link-tel">
+                            <svg class="contact-nav__icon contact-nav__icon-smartphone" width="10" height="16">
+                                <use href="./images/icons.svg#icon-smartphone"></use>
+                            </svg>
+                            +38 096 111 11 11</a>
+                    </li>
+                </ul>
+    
+                <ul class="header-social list">
+                    <li class="header-social__item">
+                        <a href="" class="header-social__link">Instagram</a>
+                    </li>
+                    <li class="header-social__item">
+                        <a href="" class="header-social__link">Twitter</a>
+                    </li>
+                    <li class="header-social__item">
+                        <a href="" class="header-social__link">Facebook</a>
+                    </li>
+                    <li class="header-social__item">
+                        <a href="" class="header-social__link">LinkedIn</a>
+                    </li>
+                </ul>
+            </div>
+    
         </div>
     </header>
 
@@ -74,7 +99,27 @@
                 <li class="products__item">
                     <a href="" class="products__link link">
                         <div class="products__thumb">
-                            <img class="products__image" src="./images/web-site-1.jpg" alt="Технокряк" width="370" height="294">
+                            <img 
+                            class="products__image" 
+                            srcset="
+                            ./images/Technokryak_354.jpg 354w,
+                            ./images/Technokryak_354.webp 354w,
+                            ./images/Technokryak_354@2x.jpg 354w,
+                            ./images/Technokryak_354@2x.webp 354w,
+
+                            ./images/Technokryak_370.jpg 370w,
+                            ./images/Technokryak_370.webp 370w,
+                            ./images/Technokryak_370@2x.jpg 370w,
+                            ./images/Technokryak_370@2x.webp 370w,
+
+                            ./images/Technokryak_450.jpg 450w,
+                            ./images/Technokryak_450.webp 450w,
+                            ./images/Technokryak_450@2x.jpg 450w,
+                            ./images/Technokryak_450@2x.webp 450w,
+                            "
+                            src="./images/Technokryak_354.jpg"
+                            sizes="(min-width: $min-desktop) 33vw, (min-width: $min-tablet) 50vw, 100vw "
+                            alt="Технокряк">
                             <p class="products__description">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все
                             это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
                         </div>
@@ -88,7 +133,28 @@
                 <li class="products__item">
                     <a href="" class="products__link link">
                         <div class="products__thumb">
-                            <img class="products__image" src="./images/design-1.jpg" alt="Постер New Orlean vs Golden Star" width="370" height="294">
+                            <img 
+                            class="products__image" 
+                            srcset="
+                            ./images/NewOrlean_354.jpg 354w,
+                            ./images/NewOrlean_354.webp 354w,
+                            ./images/NewOrlean_354@2x.jpg 354w,
+                            ./images/NewOrlean_354@2x.webp 354w,
+
+                            ./images/NewOrlean_370.jpg 370w,
+                            ./images/NewOrlean_370.webp 370w,
+                            ./images/NewOrlean_370@2x.jpg 370w,
+                            ./images/NewOrlean_370@2x.webp 370w,
+
+                            ./images/NewOrlean_450.jpg 450w,
+                            ./images/NewOrlean_450.webp 450w,
+                            ./images/NewOrlean_450@2x.jpg 450w,
+                            ./images/NewOrlean_450@2x.webp 450w,
+                            "
+                            src="./images/NewOrlean_354.jpg" 
+                            sizes="(min-width: $min-desktop) 33vw, (min-width: $min-tablet) 50vw, 100vw "
+                            alt="Постер New Orlean vs Golden Star" 
+                            >
                             <p class="products__description">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все
                             это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>                        </div>
                         <div class="products__information">
@@ -100,7 +166,27 @@
                 <li class="products__item">
                     <a href="" class="products__link link">
                         <div class="products__thumb">
-                            <img class="products__image" src="./images/application-1.jpg" alt="Ресторан Seafood" width="370" height="294">
+                            <img 
+                            srcset="
+                            ./images/Seafood_354.jpg 354w,
+                            ./images/Seafood_354.webp 354w,
+                            ./images/Seafood_354@2x.jpg 354w,
+                            ./images/Seafood_354@2x.webp 354w,
+
+                            ./images/Seafood_370.jpg 370w,
+                            ./images/Seafood_370.webp 370w,
+                            ./images/Seafood_370@2x.jpg 370w,
+                            ./images/Seafood_370@2x.webp 370w,
+
+                            ./images/Seafood_450.jpg 450w,
+                            ./images/Seafood_450.webp 450w,
+                            ./images/Seafood_450@2x.jpg 450w,
+                            ./images/Seafood_450@2x.webp 450w,
+                            "
+                            class="products__image" 
+                            src="./images/Seafood_354.jpg" 
+                            sizes="(min-width: $min-desktop) 33vw, (min-width: $min-tablet) 50vw, (min-width: $min-mobile) 100vw "
+                            alt="Ресторан Seafood" >
                             <p class="products__description">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все
                                 это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
                         </div>
@@ -113,7 +199,27 @@
                 <li class="products__item">
                     <a href="" class="products__link link">
                         <div class="products__thumb">
-                            <img class="products__image" src="./images/marketing-1.jpg" alt="Проект Prime" width="370" height="294">
+                            <img 
+                            class="products__image" 
+                            srcset="
+                            ./images/Prime_354.jpg 354w,
+                            ./images/Prime_354.webp 354w,
+                            ./images/Prime_354@2x.jpg 354w,
+                            ./images/Prime_354@2x.webp 354w,
+
+                            ./images/Prime_370.jpg 370w,
+                            ./images/Prime_370.webp 370w,
+                            ./images/Prime_370@2x.jpg 370w,
+                            ./images/Prime_370@2x.webp 370w,
+
+                            ./images/Prime_450.jpg 450w,
+                            ./images/Prime_450.webp 450w,
+                            ./images/Prime_450@2x.jpg 450w,
+                            ./images/Prime_450@2x.webp 450w,
+                            "
+                            src="./images/Prime_354.jpg" 
+                            sizes="(min-width: $min-desktop) 33vw, (min-width: $min-tablet) 50vw, (min-width: $min-mobile) 100vw "
+                            alt="Проект Prime">
                             <p class="products__description">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все
                                 это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
                         </div>
@@ -126,7 +232,27 @@
                 <li class="products__item">
                     <a href="" class="products__link link">
                         <div class="products__thumb">
-                            <img class="products__image" src="./images/application-2.jpg" alt="Проект Boxes" width="370" height="294">
+                            <img 
+                            class="products__image" 
+                            srcset="
+                            ./images/Boxes_354.jpg 354w,
+                            ./images/Boxes_354.webp 354w,
+                            ./images/Boxes_354@2x.jpg 354w,
+                            ./images/Boxes_354@2x.webp 354w,
+
+                            ./images/Boxes_370.jpg 370w,
+                            ./images/Boxes_370.webp 370w,
+                            ./images/Boxes_370@2x.jpg 370w,
+                            ./images/Boxes_370@2x.webp 370w,
+
+                            ./images/Boxes_450.jpg 450w,
+                            ./images/Boxes_450.webp 450w,
+                            ./images/Boxes_450@2x.jpg 450w,
+                            ./images/Boxes_450@2x.webp 450w,
+                            "
+                            src="./images/Boxes_354.jpg" 
+                            sizes="(min-width: $min-desktop) 33vw, (min-width: $min-tablet) 50vw, (min-width: $min-mobile) 100vw "
+                            alt="Проект Boxes">
                             <p class="products__description">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все
                                 это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
                         </div>
@@ -139,7 +265,27 @@
                 <li class="products__item">
                     <a href="" class="products__link link">
                         <div class="products__thumb">
-                            <img class="products__image" src="./images/web-site-2.jpg" alt="Inspiration has no Borders" width="370" height="294">
+                            <img 
+                            class="products__image"
+                            srcset="
+                            ./images/Inspiration_354.jpg 354w,
+                            ./images/Inspiration_354.webp 354w,
+                            ./images/Inspiration_354@2x.jpg 354w,
+                            ./images/Inspiration_354@2x.webp 354w,
+
+                            ./images/Inspiration_370.jpg 370w,
+                            ./images/Inspiration_370.webp 370w,
+                            ./images/Inspiration_370@2x.jpg 370w,
+                            ./images/Inspiration_370@2x.webp 370w,
+
+                            ./images/Inspiration_450.jpg 450w,
+                            ./images/Inspiration_450.webp 450w,
+                            ./images/Inspiration_450@2x.jpg 450w,
+                            ./images/Inspiration_450@2x.webp 450w,
+                            "
+                            src="./images/Inspiration_354.jpg" 
+                            sizes="(min-width: $min-desktop) 33vw, (min-width: $min-tablet) 50vw, (min-width: $min-mobile) 100vw "
+                            alt="Inspiration has no Borders">
                             <p class="products__description">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все
                                 это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
                         </div>
@@ -152,7 +298,27 @@
                 <li class="products__item">
                     <a href="" class="products__link link">
                         <div class="products__thumb">
-                            <img class="products__image" src="./images/design-2.jpg" alt="Издание Limited Edition" width="370" height="294">
+                            <img 
+                            class="products__image"
+                            srcset="
+                            ./images/Edition_354.jpg 354w,
+                            ./images/Edition_354.webp 354w,
+                            ./images/Edition_354@2x.jpg 354w,
+                            ./images/Edition_354@2x.webp 354w,
+
+                            ./images/Edition_370.jpg 370w,
+                            ./images/Edition_370.webp 370w,
+                            ./images/Edition_3704@2x.jpg 370w,
+                            ./images/Edition_370@2x.webp 370w,
+
+                            ./images/Edition_450.jpg 450w,
+                            ./images/Edition_450.webp 450w,
+                            ./images/Edition_450@2x.jpg 450w,
+                            ./images/Edition_450@2x.webp 450w,
+                            "
+                            src="./images/Edition_354.jpg" 
+                            sizes="(min-width: $min-desktop) 33vw, (min-width: $min-tablet) 50vw, (min-width: $min-mobile), 100vw "
+                            alt="Издание Limited Edition">
                             <p class="products__description">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все
                                 это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
                         </div>
@@ -165,7 +331,27 @@
                 <li class="products__item">
                     <a href="" class="products__link link">
                         <div class="products__thumb">
-                            <img class="products__image" src="./images/marketing-2.jpg" alt="Проект LAB" width="370" height="294">
+                            <img 
+                            class="products__image"
+                            srcset="
+                            ./images/LAB_354.jpg 354w,
+                            ./images/LAB_354.webp 354w,
+                            ./images/LAB_354@2x.jpg 354w,
+                            ./images/LAB_354@2x.webp 354w,
+
+                            ./images/LAB_370.jpg 370w,
+                            ./images/LAB_370.webp 370w,
+                            ./images/LAB_370@2x.jpg 370w,
+                            ./images/LAB_370@2x.webp 370w,
+
+                            ./images/LAB_450.jpg 450w,
+                            ./images/LAB_450.webp 450w,
+                            ./images/LAB_450@2x.jpg 450w,
+                            ./images/LAB_450@2x.webp 450w,
+                            "
+                            src="./images/LAB_354.jpg" 
+                            sizes="(min-width: $min-desktop) 33vw, (min-width: $min-tablet) 50vw, (min-width: $min-mobile), 100vw "
+                            alt="Проект LAB" >
                             <p class="products__description">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все
                                 это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
                         </div>
@@ -178,7 +364,27 @@
                 <li class="products__item">
                     <a href="" class="products__link link">
                         <div class="products__thumb">
-                            <img class="products__image" src="./images/application-3.jpg" alt="Growing Business" width="370" height="294">
+                            <img 
+                            class="products__image" 
+                            srcset="
+                            ./images/GrowingBusiess_354.jpg 354w,
+                            ./images/GrowingBusiess_354.webp 354w,
+                            ./images/GrowingBusiess_354@2x.jpg 354w,
+                            ./images/GrowingBusiess_354@2x.webp 354w,
+
+                            ./images/GrowingBusiess_370.jpg 370w,
+                            ./images/GrowingBusiess_370.webp 370w,
+                            ./images/GrowingBusiess_370@2x.jpg 370w,
+                            ./images/GrowingBusiess_370@2x.webp 370w,
+
+                            ./images/GrowingBusiess_450.jpg 450w,
+                            ./images/GrowingBusiess_450.webp 450w,
+                            ./images/GrowingBusiess_450@2x.jpg 450w,
+                            ./images/GrowingBusiess_450@2x.webp 450w,
+                            "
+                            src="./images/GrowingBusiess_354.jpg"
+                            sizes="(min-width: $min-desktop) 33vw, (min-width: $min-tablet) 50vw, (min-width: $min-mobile), 100vw "
+                            alt="Growing Business">
                             <p class="products__description">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все
                                 это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
                         </div>
@@ -271,5 +477,7 @@
             </div>
         </div>
     </footer>
+    <script src="./js/menu.js"></script>
+    <script src="./js/mobile-menu.js"></script>
 </body>
 </html>
