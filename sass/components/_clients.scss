@@ -12,6 +12,8 @@
 }
 
 .clients__item {
+    height: 92px;
+
     @media screen and (max-width: $min-mobile){
         width: calc((320px - 60px) / 2);
         margin: 15px;
@@ -30,7 +32,6 @@
     @media screen and (min-width: $min-desktop){
         width: calc((1200px - 180px) / 6);
         margin-right: 30px;
-    
     }
 }
 

@@ -45,8 +45,19 @@
 
 .members__photo{
     display: block;
-    max-width: 100%;
-    height: auto;
+
+@media screen and (max-width: $max-mobile){
+    width: 450px;
+    height: 460px;
+}
+@media screen and (min-width: $min-tablet){
+    width: 354px;
+    height: 374px;
+}
+@media screen and (min-width:$min-desktop){
+    width: 270px;
+    height: 260px;
+}
 }
 
 .members__information {
