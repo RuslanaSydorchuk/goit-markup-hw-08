@@ -754,7 +754,7 @@ body.modal-open {
     border: none;
     background-color: transparent;
     cursor: pointer;
-    z-index: 2;
+    z-index: 3;
   }
 }
 @media screen and (min-width: 768px) {
@@ -794,11 +794,36 @@ body.modal-open {
   margin-left: auto;
   max-width: 1600px;
   background-color: #2F303A;
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero-background.jpg);
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-background.jpg);
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("hero_mobile.jpg");
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("hero_mobile.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   text-align: center;
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+  .hero .hero {
+    background-image: url("hero_mobile@2x.jpg");
+  }
+}
+@media (min-width: 576px) {
+  .hero .hero {
+    background-image: url("hero_tablet.jpg");
+  }
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+  .hero .hero {
+    background-image: url("hero_tablet@2x.jpg");
+  }
+}
+@media (min-width: 960px) {
+  .hero .hero {
+    background-image: url("hero_desktop.jpg");
+  }
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+  .hero .hero {
+    background-image: url("hero_desktop@2x.jpg");
+  }
 }
 
 .hero__title {
@@ -1621,9 +1646,6 @@ body.modal-open {
   }
 }
 
-.clients__item {
-  height: 92px;
-}
 @media screen and (max-width: 480px) {
   .clients__item {
     width: 130px;
@@ -1636,7 +1658,7 @@ body.modal-open {
     margin: 15px;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .clients__item {
     width: 226px;
     margin: 15px;
@@ -1659,6 +1681,7 @@ body.modal-open {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  height: 92px;
   border: 1px solid #AFB1B8;
   border-radius: 4px;
   fill: #AFB1B8;
