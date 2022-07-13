@@ -24,7 +24,8 @@
 
 .products__link {
     text-decoration: none;
-    display: block;
+    display: flex;
+    flex-direction: column;
     height: 100%;
     
     transition-property: box-shadow, transform, opacity;
@@ -45,22 +46,12 @@
 .products__thumb {
     position: relative;
     overflow: hidden;
-
-
 }
 
 .products__image{
     display: block;
-    height: 294px;
-    @media screen and (min-width: $min-mobile) {
-            width: 450px;
-        }
-        @media screen and (min-width: $min-tablet) and (max-width: $max-tablet){
-            width: 354px;
-        }
-        @media screen and (min-width: $min-desktop){
-            width: 370px;
-        }
+    height: auto;
+    width: 100%;
 }
 
 .products__description {
@@ -95,7 +86,7 @@
     border-left: 1px solid #EEEEEE;
     border-bottom: 1px solid #EEEEEE;
     border-right: 1px solid #EEEEEE;
-    align-items: stretch;
+    flex-grow: 1;
 }
 
 .products__name {

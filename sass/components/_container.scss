@@ -6,16 +6,13 @@
 
     @media screen and (min-width: $min-mobile){
         width: 480px;
-        background-color: violet;
     }
 
     @media screen and (min-width: $min-tablet){
         width: 768px;
-        background-color: blue;
     }
 
     @media screen and (min-width: $min-desktop){
-        width: 1200px;
-        background-color: orange;
+        width: 1200px;;
     }
 }

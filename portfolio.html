@@ -99,27 +99,73 @@
                 <li class="products__item">
                     <a href="" class="products__link link">
                         <div class="products__thumb">
-                            <img 
-                            class="products__image" 
-                            srcset="
-                            ./images/Technokryak_354.jpg 1x,
-                            ./images/Technokryak_354.webp 1x,
-                            ./images/Technokryak_354@2x.jpg 2x,
-                            ./images/Technokryak_354@2x.webp 2x,
+                            <picture class="products__image">
+                                <source
+                                srcset="
+                                ./images/Technokryak_354.webp 1x" 
+                                type="image/webp"
+                                media="(min-width: 768px) and (max-width: 1199px)">
 
-                            ./images/Technokryak_370.jpg 1x,
-                            ./images/Technokryak_370.webp 1x,
-                            ./images/Technokryak_370@2x.jpg 2x,
-                            ./images/Technokryak_370@2x.webp 2x,
+                                <source
+                                srcset="
+                                ./images/Technokryak_354@2x.webp 2x"
+                                type="image/webp"
+                                media="(min-width: 768px) and (max-width: 1199px)">
 
-                            ./images/Technokryak_450.jpg 1x,
-                            ./images/Technokryak_450.webp 1x,
-                            ./images/Technokryak_450@2x.jpg 2x,
-                            ./images/Technokryak_450@2x.webp 2x,
-                            "
-                            src="./images/Technokryak_354.jpg"
+                                <source
+                                srcset="
+                                ./images/Technokryak_354.jpg 1x"
+                                media="(min-width: 768px) and (max-width: 1199px)">
+
+                                <source srcset="
+                                ./images/Technokryak_354@2x.jpg 2x" 
+                                media="(min-width: 768px) and (max-width: 1199px)">
+
+                                <source
+                                srcset="
+                                ./images/Technokryak_370.webp 1x"
+                                type="image/webp"
+                                media="(min-width: 1200px)">
+
+                                <source srcset="
+                                ./images/Technokryak_370@2x.webp 2x" 
+                                type="image/webp"
+                                media="(min-width: 1200px)">
+                                
+                                <source
+                                srcset="
+                                ./images/Technokryak_370.jpg 1x"
+                                media="(min-width: 1200px)">
+
+                                <source srcset="
+                                ./images/Technokryak_370@2x.jpg 2x" 
+                                media="(min-width: 1200px)">
+
+                                <source
+                                srcset="
+                                ./images/Technokryak_450.webp 1x"
+                                type="image/webp"
+                                media="(max-width: 767px)">
+
+                                <source 
+                                srcset="
+                                ./images/Technokryak_450@2x.webp 2x" 
+                                type="image/webp"
+                                media="(max-width: 767px)">
+
+                                <source
+                                srcset="
+                                ./images/Technokryak_450.jpg 1x"
+                                media="(max-width: 767px)">
+
+                                <source srcset="
+                                ./images/Technokryak_450@2x.jpg 2x" 
+                                media="(max-width: 767px)">
+
+                                <img src="./images/Technokryak_354.jpg" 
+                                alt="Технокряк">
+                            </picture>
                             
-                            alt="Технокряк">
                             <p class="products__description">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все
                             это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
                         </div>
@@ -133,27 +179,65 @@
                 <li class="products__item">
                     <a href="" class="products__link link">
                         <div class="products__thumb">
-                            <img 
-                            class="products__image" 
-                            srcset="
-                            ./images/NewOrlean_354.jpg 1x,
-                            ./images/NewOrlean_354.webp 1x,
-                            ./images/NewOrlean_354@2x.jpg 2x,
-                            ./images/NewOrlean_354@2x.webp 2x,
-
-                            ./images/NewOrlean_370.jpg 1x,
-                            ./images/NewOrlean_370.webp 1x,
-                            ./images/NewOrlean_370@2x.jpg 2x,
-                            ./images/NewOrlean_370@2x.webp 2x,
-
-                            ./images/NewOrlean_450.jpg 1x,
-                            ./images/NewOrlean_450.webp 1x,
-                            ./images/NewOrlean_450@2x.jpg 2x,
-                            ./images/NewOrlean_450@2x.webp 2x,
-                            "
-                            src="./images/NewOrlean_354.jpg" 
-                            alt="Постер New Orlean vs Golden Star" 
-                            >
+                            <picture class="products__image">
+                                <source srcset="
+                                ./images/NewOrlean_354.webp 1x" 
+                                type="image/webp"
+                                media="(min-width: 768px) and (max-width: 1199px)">
+                            
+                                <source srcset="
+                                ./images/NewOrlean_354@2x.webp 2x" 
+                                type="image/webp"
+                                media="(min-width: 768px) and (max-width: 1199px)">
+                            
+                                <source srcset="
+                                ./images/NewOrlean_354.jpg 1x" 
+                                media="(min-width: 768px) and (max-width: 1199px)">
+                            
+                                <source srcset="
+                                ./images/NewOrlean_354@2x.jpg 2x" 
+                                media="(min-width: 768px) and (max-width: 1199px)">
+                            
+                                <source srcset="
+                                ./images/NewOrlean_370.webp 1x" 
+                                type="image/webp" 
+                                media="(min-width: 1200px)">
+                            
+                                <source srcset="
+                                ./images/NewOrlean_370@2x.webp 2x" 
+                                type="image/webp" 
+                                media="(min-width: 1200px)">
+                            
+                                <source srcset="
+                                ./images/NewOrlean_370.jpg 1x" 
+                                media="(min-width: 1200px)">
+                            
+                                <source srcset="
+                                ./images/NewOrlean_370@2x.jpg 2x" 
+                                media="(min-width: 1200px)">
+                            
+                                <source srcset="
+                                ./images/NewOrlean_450.webp 1x" 
+                                type="image/webp" 
+                                media="(max-width: 767px)">
+                            
+                                <source srcset="
+                                ./images/NewOrlean_450@2x.webp 2x" 
+                                type="image/webp" 
+                                media="(max-width: 767px)">
+                            
+                                <source srcset="
+                                ./images/NewOrlean_450.jpg 1x" 
+                                media="(max-width: 767px)">
+                            
+                                <source srcset="
+                                ./images/NewOrlean_450@2x.jpg 2x" 
+                                media="(max-width: 767px)">
+                            
+                                <img src="./images/NewOrlean_354.jpg" 
+                                alt="Постер New Orlean vs Golden Star">
+                            </picture>
+                           
                             <p class="products__description">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все
                             это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>                        </div>
                         <div class="products__information">
@@ -165,26 +249,65 @@
                 <li class="products__item">
                     <a href="" class="products__link link">
                         <div class="products__thumb">
-                            <img 
-                            srcset="
-                            ./images/Seafood_354.jpg 1x,
-                            ./images/Seafood_354.webp 1x,
-                            ./images/Seafood_354@2x.jpg 2x,
-                            ./images/Seafood_354@2x.webp 2x,
-
-                            ./images/Seafood_370.jpg 1x,
-                            ./images/Seafood_370.webp 1x,
-                            ./images/Seafood_370@2x.jpg 2x,
-                            ./images/Seafood_370@2x.webp 2x,
-
-                            ./images/Seafood_450.jpg 1x,
-                            ./images/Seafood_450.webp 1x,
-                            ./images/Seafood_450@2x.jpg 2x,
-                            ./images/Seafood_450@2x.webp 2x,
-                            "
-                            class="products__image" 
-                            src="./images/Seafood_354.jpg" 
-                            alt="Ресторан Seafood" >
+                            <picture class="products__image">
+                                <source srcset="
+                                ./images/Seafood_354.webp 1x" 
+                                type="image/webp"
+                                media="(min-width: 768px) and (max-width: 1199px)">
+                            
+                                <source srcset="
+                                ./images/Seafood_354@2x.webp 2x" 
+                                type="image/webp"
+                                media="(min-width: 768px) and (max-width: 1199px)">
+                            
+                                <source srcset="
+                                ./images/Seafood_354.jpg 1x" 
+                                media="(min-width: 768px) and (max-width: 1199px)">
+                            
+                                <source srcset="
+                                ./images/Seafood_354@2x.jpg 2x" 
+                                media="(min-width: 768px) and (max-width: 1199px)">
+                            
+                                <source srcset="
+                                ./images/Seafood_370.webp 1x" 
+                                type="image/webp" 
+                                media="(min-width: 1200px)">
+                            
+                                <source srcset="
+                                ./images/Seafood_370@2x.webp 2x" 
+                                type="image/webp" 
+                                media="(min-width: 1200px)">
+                            
+                                <source srcset="
+                                ./images/Seafood_370.jpg 1x" 
+                                media="(min-width: 1200px)">
+                            
+                                <source srcset="
+                                ./images/Seafood_370@2x.jpg 2x" 
+                                media="(min-width: 1200px)">
+                            
+                                <source srcset="
+                                ./images/Seafood_450.webp 1x" 
+                                type="image/webp" 
+                                media="(max-width: 767px)">
+                            
+                                <source srcset="
+                                ./images/Seafood_450@2x.webp 2x" 
+                                type="image/webp" 
+                                media="(max-width: 767px)">
+                            
+                                <source srcset="
+                                ./images/Seafood_450.jpg 1x" 
+                                media="(max-width: 767px)">
+                            
+                                <source srcset="
+                                ./images/Seafood_450@2x.jpg 2x" 
+                                media="(max-width: 767px)">
+                            
+                                <img src="./images/Seafood_354.jpg" 
+                                alt="Ресторан Seafood">
+                            </picture>
+                            
                             <p class="products__description">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все
                                 это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
                         </div>
@@ -197,26 +320,65 @@
                 <li class="products__item">
                     <a href="" class="products__link link">
                         <div class="products__thumb">
-                            <img 
-                            class="products__image" 
-                            srcset="
-                            ./images/Prime_354.jpg 1x,
-                            ./images/Prime_354.webp 1x,
-                            ./images/Prime_354@2x.jpg 2x,
-                            ./images/Prime_354@2x.webp 2x,
-
-                            ./images/Prime_370.jpg 1x,
-                            ./images/Prime_370.webp 1x,
-                            ./images/Prime_370@2x.jpg 2x,
-                            ./images/Prime_370@2x.webp 2x,
-
-                            ./images/Prime_450.jpg 1x,
-                            ./images/Prime_450.webp 1x,
-                            ./images/Prime_450@2x.jpg 2x,
-                            ./images/Prime_450@2x.webp 2x,
-                            "
-                            src="./images/Prime_354.jpg" 
-                            alt="Проект Prime">
+                            <picture class="products__image">
+                                <source srcset="
+                                ./images/Prime_354.webp 1x" 
+                                type="image/webp"
+                                media="(min-width: 768px) and (max-width: 1199px)">
+                            
+                                <source srcset="
+                                ./images/Prime_354@2x.webp 2x" 
+                                type="image/webp"
+                                media="(min-width: 768px) and (max-width: 1199px)">
+                            
+                                <source srcset="
+                                ./images/Prime_354.jpg 1x" 
+                                media="(min-width: 768px) and (max-width: 1199px)">
+                            
+                                <source srcset="
+                                ./images/Prime_354@2x.jpg 2x" 
+                                media="(min-width: 768px) and (max-width: 1199px)">
+                            
+                                <source srcset="
+                                ./images/Prime_370.webp 1x" 
+                                type="image/webp" 
+                                media="(min-width: 1200px)">
+                            
+                                <source srcset="
+                                ./images/Prime_370@2x.webp 2x" 
+                                type="image/webp" 
+                                media="(min-width: 1200px)">
+                            
+                                <source srcset="
+                                ./images/Prime_370.jpg 1x" 
+                                media="(min-width: 1200px)">
+                            
+                                <source srcset="
+                                ./images/Prime_370@2x.jpg 2x" 
+                                media="(min-width: 1200px)">
+                            
+                                <source srcset="
+                                ./images/Prime_450.webp 1x" 
+                                type="image/webp" 
+                                media="(max-width: 767px)">
+                            
+                                <source srcset="
+                                ./images/Prime_450@2x.webp 2x" 
+                                type="image/webp" 
+                                media="(max-width: 767px)">
+                            
+                                <source srcset="
+                                ./images/Prime_450.jpg 1x" 
+                                media="(max-width: 767px)">
+                            
+                                <source srcset="
+                                ./images/Prime_450@2x.jpg 2x" 
+                                media="(max-width: 767px)">
+                            
+                                <img src="./images/Prime_354.jpg" 
+                                alt="Проект Prime">
+                            </picture>
+                            
                             <p class="products__description">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все
                                 это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
                         </div>
@@ -229,26 +391,65 @@
                 <li class="products__item">
                     <a href="" class="products__link link">
                         <div class="products__thumb">
-                            <img 
-                            class="products__image" 
-                            srcset="
-                            ./images/Boxes_354.jpg 1x,
-                            ./images/Boxes_354.webp 1x,
-                            ./images/Boxes_354@2x.jpg 2x,
-                            ./images/Boxes_354@2x.webp 2x,
-
-                            ./images/Boxes_370.jpg 1x,
-                            ./images/Boxes_370.webp 1x,
-                            ./images/Boxes_370@2x.jpg 2x,
-                            ./images/Boxes_370@2x.webp 2x,
-
-                            ./images/Boxes_450.jpg 1x,
-                            ./images/Boxes_450.webp 1x,
-                            ./images/Boxes_450@2x.jpg 2x,
-                            ./images/Boxes_450@2x.webp 2x,
-                            "
-                            src="./images/Boxes_354.jpg" 
-                            alt="Проект Boxes">
+                            <picture class="products__image">
+                                <source srcset="
+                                ./images/Boxes_354.webp 1x" 
+                                type="image/webp"
+                                media="(min-width: 768px) and (max-width: 1199px)">
+                            
+                                <source srcset="
+                                ./images/Boxes_354@2x.webp 2x" 
+                                type="image/webp"
+                                media="(min-width: 768px) and (max-width: 1199px)">
+                            
+                                <source srcset="
+                                ./images/Boxes_354.jpg 1x" 
+                                media="(min-width: 768px) and (max-width: 1199px)">
+                            
+                                <source srcset="
+                                ./images/Boxes_354@2x.jpg 2x" 
+                                media="(min-width: 768px) and (max-width: 1199px)">
+                            
+                                <source srcset="
+                                ./images/Boxes_370.webp 1x" 
+                                type="image/webp" 
+                                media="(min-width: 1200px)">
+                            
+                                <source srcset="
+                                ./images/Boxes_370@2x.webp 2x" 
+                                type="image/webp" 
+                                media="(min-width: 1200px)">
+                            
+                                <source srcset="
+                                ./images/Boxes_370.jpg 1x" 
+                                media="(min-width: 1200px)">
+                            
+                                <source srcset="
+                                ./images/Boxes_370@2x.jpg 2x" 
+                                media="(min-width: 1200px)">
+                            
+                                <source srcset="
+                                ./images/Boxes_450.webp 1x" 
+                                type="image/webp" 
+                                media="(max-width: 767px)">
+                            
+                                <source srcset="
+                                ./images/Boxes_450@2x.webp 2x" 
+                                type="image/webp" 
+                                media="(max-width: 767px)">
+                            
+                                <source srcset="
+                                ./images/Boxes_450.jpg 1x" 
+                                media="(max-width: 767px)">
+                            
+                                <source srcset="
+                                ./images/Boxes_450@2x.jpg 2x" 
+                                media="(max-width: 767px)">
+                            
+                                <img src="./images/Boxes_354.jpg" 
+                                alt="Проект Boxes">
+                            </picture>
+                            
                             <p class="products__description">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все
                                 это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
                         </div>
@@ -261,26 +462,65 @@
                 <li class="products__item">
                     <a href="" class="products__link link">
                         <div class="products__thumb">
-                            <img 
-                            class="products__image"
-                            srcset="
-                            ./images/Inspiration_354.jpg 1x,
-                            ./images/Inspiration_354.webp 1x,
-                            ./images/Inspiration_354@2x.jpg 2x,
-                            ./images/Inspiration_354@2x.webp 2x,
-
-                            ./images/Inspiration_370.jpg 1x,
-                            ./images/Inspiration_370.webp 1x,
-                            ./images/Inspiration_370@2x.jpg 2x,
-                            ./images/Inspiration_370@2x.webp 2x,
-
-                            ./images/Inspiration_450.jpg 1x,
-                            ./images/Inspiration_450.webp 1x,
-                            ./images/Inspiration_450@2x.jpg 2x,
-                            ./images/Inspiration_450@2x.webp 2x,
-                            "
-                            src="./images/Inspiration_354.jpg" 
-                            alt="Inspiration has no Borders">
+                            <picture class="products__image">
+                                <source srcset="
+                                ./images/Inspiration_354.webp 1x" 
+                                type="image/webp"
+                                media="(min-width: 768px) and (max-width: 1199px)">
+                            
+                                <source srcset="
+                                ./images/Inspiration_354@2x.webp 2x" 
+                                type="image/webp"
+                                media="(min-width: 768px) and (max-width: 1199px)">
+                            
+                                <source srcset="
+                                ./images/Inspiration_354.jpg 1x" 
+                                media="(min-width: 768px) and (max-width: 1199px)">
+                            
+                                <source srcset="
+                                ./images/Inspiration_354@2x.jpg 2x" 
+                                media="(min-width: 768px) and (max-width: 1199px)">
+                            
+                                <source srcset="
+                                ./images/Inspiration_370.webp 1x" 
+                                type="image/webp" 
+                                media="(min-width: 1200px)">
+                            
+                                <source srcset="
+                                ./images/Inspiration_370@2x.webp 2x" 
+                                type="image/webp" 
+                                media="(min-width: 1200px)">
+                            
+                                <source srcset="
+                                ./images/Inspiration_370.jpg 1x" 
+                                media="(min-width: 1200px)">
+                            
+                                <source srcset="
+                                ./images/Inspiration_370@2x.jpg 2x" 
+                                media="(min-width: 1200px)">
+                            
+                                <source srcset="
+                                ./images/Inspiration_450.webp 1x" 
+                                type="image/webp" 
+                                media="(max-width: 767px)">
+                            
+                                <source srcset="
+                                ./images/Inspiration_450@2x.webp 2x" 
+                                type="image/webp" 
+                                media="(max-width: 767px)">
+                            
+                                <source srcset="
+                                ./images/Inspiration_450.jpg 1x" 
+                                media="(max-width: 767px)">
+                            
+                                <source srcset="
+                                ./images/Inspiration_450@2x.jpg 2x" 
+                                media="(max-width: 767px)">
+                            
+                                <img src="./images/Inspiration_354.jpg" 
+                                alt="Inspiration has no Borders">
+                            </picture>
+                            
                             <p class="products__description">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все
                                 это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
                         </div>
@@ -293,26 +533,65 @@
                 <li class="products__item">
                     <a href="" class="products__link link">
                         <div class="products__thumb">
-                            <img 
-                            class="products__image"
-                            srcset="
-                            ./images/Edition_354.jpg 1x,
-                            ./images/Edition_354.webp 1x,
-                            ./images/Edition_354@2x.jpg 2x,
-                            ./images/Edition_354@2x.webp 2x,
-
-                            ./images/Edition_370.jpg 1x,
-                            ./images/Edition_370.webp 1x,
-                            ./images/Edition_3704@2x.jpg 2x,
-                            ./images/Edition_370@2x.webp 2x,
-
-                            ./images/Edition_450.jpg 1x,
-                            ./images/Edition_450.webp 1x,
-                            ./images/Edition_450@2x.jpg 2x,
-                            ./images/Edition_450@2x.webp 2x,
-                            "
-                            src="./images/Edition_354.jpg" 
-                            alt="Издание Limited Edition">
+                            <picture class="products__image">
+                                <source srcset="
+                                ./images/Edition_354.webp 1x" 
+                                type="image/webp"
+                                media="(min-width: 768px) and (max-width: 1199px)">
+                            
+                                <source srcset="
+                                ./images/Edition_354@2x.webp 2x" 
+                                type="image/webp"
+                                media="(min-width: 768px) and (max-width: 1199px)">
+                            
+                                <source srcset="
+                                ./images/Edition_354.jpg 1x" 
+                                media="(min-width: 768px) and (max-width: 1199px)">
+                            
+                                <source srcset="
+                                ./images/Edition_354@2x.jpg 2x" 
+                                media="(min-width: 768px) and (max-width: 1199px)">
+                            
+                                <source srcset="
+                                ./images/Edition_370.webp 1x" 
+                                type="image/webp" 
+                                media="(min-width: 1200px)">
+                            
+                                <source srcset="
+                                ./images/Edition_370@2x.webp 2x" 
+                                type="image/webp" 
+                                media="(min-width: 1200px)">
+                            
+                                <source srcset="
+                                ./images/Edition_370.jpg 1x" 
+                                media="(min-width: 1200px)">
+                            
+                                <source srcset="
+                                ./images/Edition_3704@2x.jpg 2x" 
+                                media="(min-width: 1200px)">
+                            
+                                <source srcset="
+                                ./images/Edition_450.webp 1x" 
+                                type="image/webp" 
+                                media="(max-width: 767px)">
+                            
+                                <source srcset="
+                                ./images/Edition_450@2x.webp 2x" 
+                                type="image/webp" 
+                                media="(max-width: 767px)">
+                            
+                                <source srcset="
+                                ./images/Edition_450.jpg 1x" 
+                                media="(max-width: 767px)">
+                            
+                                <source srcset="
+                                ./images/Edition_450@2x.jpg 2x" 
+                                media="(max-width: 767px)">
+                            
+                                <img src="./images/Edition_354.jpg" 
+                                alt="Издание Limited Edition">
+                            </picture>
+                            
                             <p class="products__description">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все
                                 это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
                         </div>
@@ -325,26 +604,65 @@
                 <li class="products__item">
                     <a href="" class="products__link link">
                         <div class="products__thumb">
-                            <img 
-                            class="products__image"
-                            srcset="
-                            ./images/LAB_354.jpg 1x,
-                            ./images/LAB_354.webp 1x,
-                            ./images/LAB_354@2x.jpg 2x,
-                            ./images/LAB_354@2x.webp 2x,
-
-                            ./images/LAB_370.jpg 1x,
-                            ./images/LAB_370.webp 1x,
-                            ./images/LAB_370@2x.jpg 2x,
-                            ./images/LAB_370@2x.webp 2x,
-
-                            ./images/LAB_450.jpg 1x,
-                            ./images/LAB_450.webp 1x,
-                            ./images/LAB_450@2x.jpg 2x,
-                            ./images/LAB_450@2x.webp 2x,
-                            "
-                            src="./images/LAB_354.jpg" 
-                            alt="Проект LAB" >
+                            <picture class="products__image">
+                                <source srcset="
+                                ./images/LAB_354.webp 1x" 
+                                type="image/webp"
+                                media="(min-width: 768px) and (max-width: 1199px)">
+                            
+                                <source srcset="
+                                ./images/LAB_354@2x.webp 2x" 
+                                type="image/webp"
+                                media="(min-width: 768px) and (max-width: 1199px)">
+                            
+                                <source srcset="
+                                ./images/LAB_354.jpg 1x" 
+                                media="(min-width: 768px) and (max-width: 1199px)">
+                            
+                                <source srcset="
+                                ./images/LAB_354@2x.jpg 2x" 
+                                media="(min-width: 768px) and (max-width: 1199px)">
+                            
+                                <source srcset="
+                                ./images/LAB_370.webp 1x" 
+                                type="image/webp" 
+                                media="(min-width: 1200px)">
+                            
+                                <source srcset="
+                                ./images/LAB_370@2x.webp 2x" 
+                                type="image/webp" 
+                                media="(min-width: 1200px)">
+                            
+                                <source srcset="
+                                ./images/LAB_370.jpg 1x" 
+                                media="(min-width: 1200px)">
+                            
+                                <source srcset="
+                                ./images/LAB_370@2x.jpg 2x" 
+                                media="(min-width: 1200px)">
+                            
+                                <source srcset="
+                                ./images/LAB_450.webp 1x" 
+                                type="image/webp" 
+                                media="(max-width: 767px)">
+                            
+                                <source srcset="
+                                ./images/LAB_450@2x.webp 2x" 
+                                type="image/webp" 
+                                media="(max-width: 767px)">
+                            
+                                <source srcset="
+                                ./images/LAB_450.jpg 1x" 
+                                media="(max-width: 767px)">
+                            
+                                <source srcset="
+                                ./images/LAB_450@2x.jpg 2x" 
+                                media="(max-width: 767px)">
+                            
+                                <img src="./images/LAB_354.jpg" 
+                                alt="Проект LAB">
+                            </picture>
+                            
                             <p class="products__description">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все
                                 это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
                         </div>
@@ -357,26 +675,64 @@
                 <li class="products__item">
                     <a href="" class="products__link link">
                         <div class="products__thumb">
-                            <img 
-                            class="products__image" 
-                            srcset="
-                            ./images/GrowingBusiess_354.jpg 1x,
-                            ./images/GrowingBusiess_354.webp 1x,
-                            ./images/GrowingBusiess_354@2x.jpg 2x,
-                            ./images/GrowingBusiess_354@2x.webp 2x,
-
-                            ./images/GrowingBusiess_370.jpg 1x,
-                            ./images/GrowingBusiess_370.webp 1x,
-                            ./images/GrowingBusiess_370@2x.jpg 2x,
-                            ./images/GrowingBusiess_370@2x.webp 2x,
-
-                            ./images/GrowingBusiess_450.jpg 1x,
-                            ./images/GrowingBusiess_450.webp 1x,
-                            ./images/GrowingBusiess_450@2x.jpg 2x,
-                            ./images/GrowingBusiess_450@2x.webp 2x,
-                            "
-                            src="./images/GrowingBusiess_354.jpg"
-                            alt="Growing Business">
+                            <picture class="products__image">
+                                <source srcset="
+                                ./images/GrowingBusiess_354.webp 1x" 
+                                type="image/webp"
+                                media="(min-width: 768px) and (max-width: 1199px)">
+                            
+                                <source srcset="
+                                ./images/GrowingBusiess_354@2x.webp 2x" 
+                                type="image/webp"
+                                media="(min-width: 768px) and (max-width: 1199px)">
+                            
+                                <source srcset="
+                                ./images/GrowingBusiess_354.jpg 1x" 
+                                media="(min-width: 768px) and (max-width: 1199px)">
+                            
+                                <source srcset="
+                                ./images/GrowingBusiess_354@2x.jpg 2x" 
+                                media="(min-width: 768px) and (max-width: 1199px)">
+                            
+                                <source srcset="
+                                ./images/GrowingBusiess_370.webp 1x" 
+                                type="image/webp" 
+                                media="(min-width: 1200px)">
+                            
+                                <source srcset="
+                                ./images/GrowingBusiess_370@2x.webp 2x" 
+                                type="image/webp" 
+                                media="(min-width: 1200px)">
+                            
+                                <source srcset="
+                                ./images/GrowingBusiess_370.jpg 1x" 
+                                media="(min-width: 1200px)">
+                            
+                                <source srcset="
+                                ./images/GrowingBusiess_370@2x.jpg 2x" 
+                                media="(min-width: 1200px)">
+                            
+                                <source srcset="
+                                ./images/GrowingBusiess_450.webp 1x" 
+                                type="image/webp" 
+                                media="(max-width: 767px)">
+                            
+                                <source srcset="
+                                ./images/GrowingBusiess_450@2x.webp 2x" 
+                                type="image/webp" 
+                                media="(max-width: 767px)">
+                            
+                                <source srcset="
+                                ./images/GrowingBusiess_450.jpg 1x" 
+                                media="(max-width: 767px)">
+                            
+                                <source srcset="
+                                ./images/GrowingBusiess_450@2x.jpg 2x" media="(max-width: 767px)">
+                            
+                                <img src="./images/GrowingBusiess_354.jpg" 
+                                alt="Growing Business">
+                            </picture>
+                            
                             <p class="products__description">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все
                                 это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
                         </div>

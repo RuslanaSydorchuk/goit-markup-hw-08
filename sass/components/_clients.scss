@@ -1,4 +1,10 @@
 .clients__list {
+    @media screen and (min-width: $min-mobile) and (max-width: $max-mobile){
+        display: $type;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: -15px;
+    }
     
     @media screen and (max-width: $max-tablet){
         display: $type;
