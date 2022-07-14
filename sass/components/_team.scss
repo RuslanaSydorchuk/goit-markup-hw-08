@@ -1,11 +1,13 @@
 .members {
     background-color: #F5F4FA;
+    
 }
 
 .members__list {
+    
     @media screen and (min-width: $min-mobile){
         margin: -15px;
-    }
+        }
 
     @media screen and (max-width: $max-tablet){
         display: $type;
@@ -48,17 +50,14 @@
 
 .members__information {
     @media screen and (min-width: $min-mobile){
-        width: 450px;
         padding-top: 30px;
         padding-bottom: 24px;
     };
     @media screen and (min-width: $min-tablet){
-        width: 354px;
         padding-top: 30px;
         padding-bottom: 24px;
     };
     @media screen and (min-width: $min-desktop){
-        width: 270px;
         padding-top: 30px;
         padding-bottom: 30px;
     };

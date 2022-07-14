@@ -1,5 +1,6 @@
 .main-nav {
     display: flex;
+    width: 100%;
 
     @media screen and (max-width: $max-mobile) {
         display: none;
@@ -11,6 +12,9 @@
         height: 100vh;
         background-color: $primary-background-color;
         z-index: 2;
+        margin-top: 48px;
+        margin-left: 40px;
+
     }
 
     @media screen and (min-width: $min-tablet) and (max-width: $max-tablet) {
@@ -23,7 +27,9 @@
 
     &.is-open {
         @media screen and (max-width: $max-mobile) {
-            display: block;
+            display: flex;
+            lex-direction: column;
+            justify-content: space-between;
         }
     }
 }

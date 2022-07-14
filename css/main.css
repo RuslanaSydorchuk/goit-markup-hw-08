@@ -279,17 +279,17 @@ body.modal-open {
 }
 @media screen and (min-width: 480px) {
   .container {
-    width: 480px;
+    max-width: 480px;
   }
 }
 @media screen and (min-width: 768px) {
   .container {
-    width: 768px;
+    max-width: 768px;
   }
 }
 @media screen and (min-width: 1200px) {
   .container {
-    width: 1200px;
+    max-width: 1200px;
   }
 }
 
@@ -413,13 +413,6 @@ body.modal-open {
   }
 }
 
-@media screen and (max-width: 767px) {
-  .site-nav {
-    margin-top: 48px;
-    margin-bottom: 306px;
-    margin-left: 40px;
-  }
-}
 @media screen and (min-width: 768px) {
   .site-nav {
     display: -webkit-box;
@@ -508,7 +501,6 @@ body.modal-open {
 
 @media screen and (max-width: 767px) {
   .contact-nav {
-    margin-left: 40px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -655,7 +647,7 @@ body.modal-open {
   }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 479px) {
   .header-social {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -697,6 +689,7 @@ body.modal-open {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 100%;
 }
 @media screen and (max-width: 767px) {
   .main-nav {
@@ -712,6 +705,8 @@ body.modal-open {
     height: 100vh;
     background-color: #FFFFFF;
     z-index: 2;
+    margin-top: 48px;
+    margin-left: 40px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -730,7 +725,13 @@ body.modal-open {
 }
 @media screen and (max-width: 767px) {
   .main-nav.is-open {
-    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    lex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
 
@@ -797,34 +798,46 @@ body.modal-open {
   background-size: cover;
   text-align: center;
 }
+@media screen and (max-width: 1199px) {
+  .hero {
+    padding-top: 118px;
+    padding-bottom: 118px;
+  }
+}
 @media (min-width: 320px) {
   .hero {
-    background-image: url("../images/hero_mobile.jpg");
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/hero_mobile.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero_mobile.jpg");
   }
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero .hero {
-    background-image: url("../images/hero_mobile@2x.jpg");
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/hero_mobile@2x.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero_mobile@2x.jpg");
   }
 }
 @media (min-width: 576px) {
   .hero .hero {
-    background-image: url("../images/hero_tablet.jpg");
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/hero_tablet.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero_tablet.jpg");
   }
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero .hero {
-    background-image: url("../images/hero_tablet@2x.jpg");
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/hero_tablet@2x.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero_tablet@2x.jpg");
   }
 }
 @media (min-width: 960px) {
   .hero .hero {
-    background-image: url("../images/hero_desktop.jpg");
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/hero_desktop.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero_desktop.jpg");
   }
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero .hero {
-    background-image: url("../images/hero_desktop@2x.jpg");
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/hero_desktop@2x.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero_desktop@2x.jpg");
   }
 }
 
@@ -919,12 +932,17 @@ body.modal-open {
     max-width: 450px;
     width: 100%;
     position: relative;
-    margin-right: auto;
-    margin-left: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
   }
 }
 @media screen and (min-width: 1200px) {
   .modal {
+    padding-top: 40px;
+    padding-bottom: 40px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -1283,7 +1301,7 @@ body.modal-open {
   letter-spacing: 0.03em;
   text-align: center;
 }
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 767px) {
   .section__heading {
     font-size: 28px;
     line-height: 1.18;
@@ -1527,21 +1545,18 @@ body.modal-open {
 
 @media screen and (min-width: 480px) {
   .members__information {
-    width: 450px;
     padding-top: 30px;
     padding-bottom: 24px;
   }
 }
 @media screen and (min-width: 768px) {
   .members__information {
-    width: 354px;
     padding-top: 30px;
     padding-bottom: 24px;
   }
 }
 @media screen and (min-width: 1200px) {
   .members__information {
-    width: 270px;
     padding-top: 30px;
     padding-bottom: 30px;
   }
@@ -1622,6 +1637,9 @@ body.modal-open {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     margin: -15px;

@@ -2,6 +2,7 @@
     @media screen and (min-width: $min-mobile) and (max-width: $max-mobile){
         display: $type;
         justify-content: center;
+        align-items: center;
         flex-wrap: wrap;
         margin: -15px;
     }

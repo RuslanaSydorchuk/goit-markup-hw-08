@@ -1,7 +1,6 @@
 .contact-nav {
 
     @media screen and (max-width: $max-mobile) {
-        margin-left: 40px;
         display: flex;
         flex-direction: column-reverse;
     }

@@ -1,11 +1,6 @@
 .site-nav {
 
-    @media screen and (max-width: $max-mobile){
-        margin-top: 48px;
-        margin-bottom: 306px;
-        margin-left: 40px;
-
-    }
+    
 
     @media screen and (min-width: $min-tablet) {
         display: $type;

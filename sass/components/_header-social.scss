@@ -1,5 +1,5 @@
 .header-social{
-    @media screen and (max-width: $min-mobile){
+    @media screen and (max-width: 479px){
         display: $type;
         flex-wrap: wrap;
     }
