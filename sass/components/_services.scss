@@ -1,6 +1,13 @@
+.section-servises {
+    @media screen and (max-width: $max-tablet) {
+        display: none;
+    }
+
+}
 .services__list {
     @media screen and (min-width: $min-desktop) {
         display: $type;
+        margin: -15px;
     }
 }
 
@@ -12,17 +19,12 @@
 .services__item {
     @media screen and (min-width: $min-desktop){
         width: calc((100% - 90px) /3);
-            margin-right: 30px;
-        
-            &:last-child {
-                margin-right: 0;
-            }
+        margin: 15px;
     }
     
 }
 
 .services__thumb {
-    height: 294px;
     position: relative;
 
 }

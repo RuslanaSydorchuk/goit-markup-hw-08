@@ -41,13 +41,3 @@
     }
 }
 
-.section-servises {
-    @media screen and (max-width: $max-tablet) {
-        display: none;
-    }
-
-
-    @media screen and (min-width: $min-desktop){
-        display: $type;
-    }
-}

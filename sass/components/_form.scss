@@ -59,16 +59,8 @@
     top: 50%;
 
     transform: translateY(-50%);
-    @media screen and (max-width: $min-mobile){
-        left: 0;
-    }
-    @media screen and (min-width: $min-mobile) and (max-width: $max-mobile){
-        left: 0;
-    }
-        
-    @media screen and (min-width: $min-desktop){
-        left: 12px;
-    }
+    left: 12px;
+    right: 12px;
 
     fill: #212121;
 
@@ -105,8 +97,14 @@
 
 .form__field-confirmation {
     margin-top: 20px;
-
-    @include flexCenter;
+    left: 0;
+    
+    @media screen and (max-width: 479px){
+        text-align: left;
+    }
+    @media screen and (min-width: $min-tablet){
+        @include flexCenter;
+    }
 }
 
 .form__input-confirmation {
@@ -147,6 +145,7 @@
 .form__label-confirmation{
     margin: 0;
     padding: 0;
+    
 
     display: block;
     

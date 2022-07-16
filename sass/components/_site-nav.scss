@@ -46,6 +46,7 @@
         text-align: center;
         letter-spacing: 0.02em;
         text-align: left;
+        
     }
 
     color: $title-text-color;
@@ -61,10 +62,7 @@
         }
 
     &--current {
-        @media screen and (min-width: $min-tablet){
-            color: $accent-color;
-        }
-        
+        color: $accent-color;        
         }
 
     &--current::after {
@@ -76,8 +74,8 @@
         height: 4px;
         border-radius: 2px;
         background-color: $accent-color;
-        @media screen and (max-width: $max-mobile){
-            display: none;
-        }
+        @media screen and (max-width: $max-mobile) {
+                display: none;
+            }
     }
 }
