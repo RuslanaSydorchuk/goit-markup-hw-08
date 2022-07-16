@@ -11,7 +11,7 @@
 
 .services__item {
     @media screen and (min-width: $min-desktop){
-        width: calc((1170px - 60px) /3);
+        width: calc((100% - 90px) /3);
             margin-right: 30px;
         
             &:last-child {

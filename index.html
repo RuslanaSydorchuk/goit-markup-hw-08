@@ -36,39 +36,41 @@
                     <li class="site-nav__item"><a href="portfolio.html" class="site-nav__link">Портфолио</a></li>
                     <li class="site-nav__item"><a href="" class="site-nav__link">Контакты</a></li>
                 </ul>
+                <div class="header-contacts">
+                    <ul class="contact-nav list">
+                        <li class="contact-nav__item">
+                            <a href="mailto:info@devstudio.com" class="contact-nav__link contact-nav__link-mail">
+                                <svg class="contact-nav__icon contact-nav__icon-envelope" width="16" height="12">
+                                    <use href="./images/icons.svg#icon-envelope"></use>
+                                </svg>
+                                info@devstudio.com</a>
+                        </li>
+                    
+                        <li class="contact-nav__item">
+                            <a href="tel:+380961111111" class="contact-nav__link contact-nav__link-tel">
+                                <svg class="contact-nav__icon contact-nav__icon-smartphone" width="10" height="16">
+                                    <use href="./images/icons.svg#icon-smartphone"></use>
+                                </svg>
+                                +38 096 111 11 11</a>
+                        </li>
+                    </ul>
+                    
+                    <ul class="header-social list">
+                        <li class="header-social__item">
+                            <a href="" class="header-social__link">Instagram</a>
+                        </li>
+                        <li class="header-social__item">
+                            <a href="" class="header-social__link">Twitter</a>
+                        </li>
+                        <li class="header-social__item">
+                            <a href="" class="header-social__link">Facebook</a>
+                        </li>
+                        <li class="header-social__item">
+                            <a href="" class="header-social__link">LinkedIn</a>
+                        </li>
+                    </ul>
+                </div>
                 
-                <ul class="contact-nav list">
-                    <li class="contact-nav__item">
-                        <a href="mailto:info@devstudio.com" class="contact-nav__link contact-nav__link-mail">
-                            <svg class="contact-nav__icon contact-nav__icon-envelope" width="16" height="12">
-                                <use href="./images/icons.svg#icon-envelope"></use>
-                            </svg>
-                            info@devstudio.com</a>
-                    </li>
-                
-                    <li class="contact-nav__item">
-                        <a href="tel:+380961111111" class="contact-nav__link contact-nav__link-tel">
-                            <svg class="contact-nav__icon contact-nav__icon-smartphone" width="10" height="16">
-                                <use href="./images/icons.svg#icon-smartphone"></use>
-                            </svg>
-                            +38 096 111 11 11</a>
-                    </li>
-                </ul>
-
-                <ul class="header-social list">
-                    <li class="header-social__item">
-                        <a href="" class="header-social__link">Instagram</a>
-                    </li>
-                    <li class="header-social__item">
-                        <a href=""  class="header-social__link">Twitter</a>
-                    </li>
-                    <li class="header-social__item">
-                        <a href=""  class="header-social__link">Facebook</a>
-                    </li>
-                    <li class="header-social__item">
-                        <a href=""  class="header-social__link">LinkedIn</a>
-                    </li>
-                </ul>
             </div>
             
         </div>
@@ -193,7 +195,7 @@
                 <ul class="services__list list">
                     <li class=" services__item">
                         <div class="services__thumb">
-                            <picture class="services__image">
+                            <picture >
                                 <source srcset="
                                 ./images/DesktopApp_370.webp 1x" 
                                 type="image/webp" 
@@ -212,7 +214,7 @@
                                 ./images/DesktopApp_370@2x.jpg 2x" 
                                 media="(min-width: 1200px)">
                             
-                                <img src="./images/DesktopApp_370.jpg" 
+                                <img class="services__image" src="./images/DesktopApp_370.jpg" 
                                 alt="Мобильный приложения">
                             </picture>
                             
@@ -241,7 +243,7 @@
                                 ./images/MobApp_370@2x.jpg 2x" 
                                 media="(min-width: 1200px)">
                             
-                                <img src="./images/MobApp_370.jpg" 
+                                <img class="services__image" src="./images/MobApp_370.jpg" 
                                 alt="Мобильный приложения">
                             </picture>
                             
@@ -270,7 +272,7 @@
                                 ./images/Design_370@2x.jpg 2x" 
                                 media="(min-width: 1200px)">
 
-                                <img src="./images/Design_370.jpg" 
+                                <img class="services__image" src="./images/Design_370.jpg" 
                                 alt="Дизайнерское решение">
                             </picture>
                             
@@ -287,7 +289,7 @@
                 <h2 class="section__heading">Наша команда</h2>
                 <ul class="members__list list">
                     <li class="item members__item">
-                        <picture class="members__photo">
+                        <picture >
                             <source srcset="
                             ./images/Demyanenko_270.webp 1x" 
                             type="image/webp"
@@ -322,27 +324,27 @@
                         
                             <source srcset="
                             ./images/Demyanenko_354@2x.jpg 2x" 
-                            media="(min-width: 1200px)">
+                            media="(min-width: 768px) and (max-width: 1199px)">
                         
                             <source srcset="
                             ./images/Demyanenko_450.webp 1x" 
                             type="image/webp" 
-                            media="(max-width: 767px)">
+                            media="(min-width: 480px) and (max-width: 767px)">
                         
                             <source srcset="
                             ./images/Demyanenko_450@2x.webp 2x" 
                             type="image/webp" 
-                            media="(max-width: 767px)">
+                            media="(min-width: 480px) and (max-width: 767px)">
                         
                             <source srcset="
                             ./images/Demyanenko_450.jpg 1x" 
-                            media="(max-width: 767px)">
+                            media="(min-width: 480px) and (max-width: 767px)">
                         
                             <source srcset="
                             ./images/Demyanenko_450@2x.jpg 2x" 
-                            media="(max-width: 767px)">
+                            media="(min-width: 480px) and (max-width: 767px)">
                         
-                            <img src="./images/Demyanenko_270.jpg" 
+                            <img class="members__photo" src="./images/Demyanenko_270.jpg" 
                             alt="Игорь Демьяненко">
                         </picture>
                                                 
@@ -383,7 +385,7 @@
                         
                     </li>
                     <li class="members__item item">
-                        <picture class="members__photo">
+                        <picture >
                             <source srcset="
                             ./images/Repina_270.webp 1x" 
                             type="image/webp" 
@@ -423,22 +425,22 @@
                             <source srcset="
                             ./images/Repina_450.webp 1x" 
                             type="image/webp" 
-                            media="(max-width: 767px)">
+                            media="(min-width: 480px) and (max-width: 767px)">
                         
                             <source srcset="
                             ./images/Repina_450@2x.webp 2x" 
                             type="image/webp" 
-                            media="(max-width: 767px)">
+                            media="(min-width: 480px) and (max-width: 767px)">
                         
                             <source srcset="
                             ./images/Repina_450.jpg 1x" 
-                            media="(max-width: 767px)">
+                            media="(min-width: 480px) and (max-width: 767px)">
                         
                             <source srcset="
                             ./images/Repina_450@2x.jpg 2x" 
-                            media="(max-width: 767px)">
+                            media="(min-width: 480px) and (max-width: 767px)">
                         
-                            <img src="./images/Repina_270.jpg" 
+                            <img class="members__photo" src="./images/Repina_270.jpg" 
                             alt="Ольга Репина">
                         </picture>
                                                 
@@ -479,7 +481,7 @@
                         
                     </li>
                     <li class="members__item item">
-                        <picture class="members__photo">
+                        <picture >
                             <source srcset="
                             ./images/Tarasov_270.webp 1x" 
                             type="image/webp" 
@@ -513,27 +515,28 @@
                             media="(min-width: 768px) and (max-width: 1199px)">
                         
                             <source srcset="
-                            ./images/Tarasov_354@2x.jpg 2x" media="(min-width: 1200px)">
+                            ./images/Tarasov_354@2x.jpg 2x" 
+                            media="(min-width: 768px) and (max-width: 1199px)">
                         
                             <source srcset="
                             ./images/Tarasov_450.webp 1x" 
                             type="image/webp" 
-                            media="(max-width: 767px)">
+                            media="(min-width: 480px) and (max-width: 767px)">
                         
                             <source srcset="
                             ./images/Tarasov_450@2x.webp 2x" 
                             type="image/webp" 
-                            media="(max-width: 767px)">
+                            media="(min-width: 480px) and (max-width: 767px)">
                         
                             <source srcset="
                             ./images/Tarasov_450.jpg 1x" 
-                            media="(max-width: 767px)">
+                            media="(min-width: 480px) and (max-width: 767px)">
                         
                             <source srcset="
                             ./images/Tarasov_450@2x.jpg 2x" 
-                            media="(max-width: 767px)">
+                            media="(min-width: 480px) and (max-width: 767px)">
                         
-                            <img src="./images/Tarasov_270.jpg" 
+                            <img class="members__photo" src="./images/Tarasov_270.jpg" 
                             alt="Николай Тарасов">
                         </picture>
                                                 
@@ -574,7 +577,7 @@
                         
                     </li>
                     <li class="members__item item">
-                        <picture class="members__photo">
+                        <picture >
                             <source srcset="
                             ./images/Yermakov_270.webp 1x" 
                             type="image/webp" 
@@ -609,27 +612,27 @@
                         
                             <source srcset="
                             ./images/Yermakov_354@2x.jpg 2x" 
-                            media="(min-width: 1200px)">
+                            media="(min-width: 768px) and (max-width: 1199px)">
                         
                             <source srcset="
                             ./images/Yermakov_450.webp 1x" 
                             type="image/webp" 
-                            media="(max-width: 767px)">
+                            media="(min-width: 480px) ">
                         
                             <source srcset="
                             ./images/Yermakov_450@2x.webp 2x" 
                             type="image/webp" 
-                            media="(max-width: 767px)">
+                            media="(min-width: 480px) ">
                         
                             <source srcset="
                             ./images/Yermakov_450.jpg 1x" 
-                            media="(max-width: 767px)">
+                            media="(min-width: 480px) ">
                         
                             <source srcset="
                             ./images/Yermakov_450@2x.jpg 2x" 
-                            media="(max-width: 767px)">
+                            media="(min-width: 480px) ">
                         
-                            <img src="./images/Yermakov_270.jpg" 
+                            <img class="members__photo" src="./images/Yermakov_270.jpg" 
                             alt="Михаил Ермаков">
                         </picture>
                                                 

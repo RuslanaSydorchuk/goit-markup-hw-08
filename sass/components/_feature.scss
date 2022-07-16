@@ -32,18 +32,18 @@
 .feature__item{
     
     @media screen and (max-width: $max-mobile){
-        width: calc(480px - 30px);
+        width: calc(100% - 30px);
         margin: 15px;
     }
 
     @media screen and (min-width: $min-tablet) {
-        width: calc((768px - 60px) / 2);
+        width: calc((100% - 60px) / 2);
         margin: 15px;
     }
     
 
     @media screen and (min-width: $min-desktop){
-        width: calc((1200px - 120px) / 4);
+        width: calc((100% - 120px) / 4);
         margin: 15px;
         
     }

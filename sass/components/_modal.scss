@@ -1,4 +1,12 @@
 .modal {
+    padding: 40px;
+
+    @media screen and (max-width: $max-mobile){
+        margin-top: auto;
+        margin-right: auto;
+        margin-left: auto;
+        width: calc(100% - 30px);
+    }
 
     @media screen  and (max-width: $max-tablet){
         padding-bottom: 40px;
@@ -9,7 +17,9 @@
         position: absolute;
             top: 50%;
             left: 50%;
-            transform: translate(-50%, -50%);}
+            transform: translate(-50%, -50%);
+        
+        }
     
 
     @media screen and (min-width: $min-desktop){
@@ -40,6 +50,10 @@
     top: 8px;
     right: 8px;
     position: absolute;
+    @media screen and (max-width: $max-mobile){
+        margin-top: 8px;
+        margin-right: 8px;
+    }
 
     @include flexCenter;
 
@@ -59,8 +73,7 @@
 }
 
 .modal__header {
-    margin-bottom: 0;
-    
+    margin-bottom: 12px;
     padding: 0;
 
     display: block;
@@ -72,14 +85,10 @@
     letter-spacing: 0.03em;
     color: $title-text-color;
 
-    @media screen and (max-width: $max-tablet){
-        margin-right: 40px;
-        margin-left: 40px;
-    }
-
 }
 
 .modal__button-submit {
+    margin-top: 31px;
     width: 200px;
     height: 50px;
 
